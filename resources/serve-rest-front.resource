@@ -17,8 +17,8 @@ Abrir o Navegador
     New Browser    browser=${BROWSER}
     ...            headless=${HEADLESS}
 
-    ${TRACE_NAME}    FakerLibrary.Uuid 4
-    ${NOW}    Get Current Date    result_format=%d-%m-%Y_%H%M%S    
+    ${TRACE_NAME}     FakerLibrary.Uuid 4
+    ${NOW}            Get Current Date    result_format=%d-%m-%Y_%H%M%S    
 
     New Context    viewport={'width': 1200, 'height': 800}
     # ...            tracing=${OUTPUT_DIR}/evidencies/traces/${NOW}/${TRACE_NAME}.zip

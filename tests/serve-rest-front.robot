@@ -23,7 +23,6 @@ Desafio 2: cadastrar novo produto e validar que ele aparece na listagem
 Exemplo utilizando requisições HTTP
     Abrir o Navegador
     Ir para o site Serve Rest Front
-    Criar usuário via API
     Logar com o usuário cadastrado via API
 
 Exemplo utilizando o Storage Armazenado no Contexto
