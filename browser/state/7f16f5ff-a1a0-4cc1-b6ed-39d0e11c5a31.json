@@ -6,15 +6,15 @@
       "localStorage": [
         {
           "name": "serverest/userNome",
-          "value": "Laura Meza"
+          "value": "Dr. Eric Sandoval"
         },
         {
           "name": "serverest/userEmail",
-          "value": "gail79@example.net"
+          "value": "greg93@example.com"
         },
         {
           "name": "serverest/userToken",
-          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdhaWw3OUBleGFtcGxlLm5ldCIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNzEwNTEzMjQwLCJleHAiOjE3MTA1MTM4NDB9.WcPQuuVKjm5-ka5oA5SyY0F0Yntu_5vsmpjrjCY8gFk"
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyZWc5M0BleGFtcGxlLmNvbSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNzEwNTEzNzEwLCJleHAiOjE3MTA1MTQzMTB9.sBdwinpBdRZN8cDdWC0DA3P_n2DzcEzDyfxcz9xfERc"
         }
       ]
     }
