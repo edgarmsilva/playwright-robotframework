@@ -1,0 +1,22 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://front.serverest.dev",
+      "localStorage": [
+        {
+          "name": "serverest/userToken",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJyaXR0YW55ZmllbGRzQGV4YW1wbGUub3JnIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MTA1Mjc3NTMsImV4cCI6MTcxMDUyODM1M30.lCP1uDJmBdKbHRRuWiP3znBJR_kSzwj_qbF1CNoN3Xo"
+        },
+        {
+          "name": "serverest/userNome",
+          "value": "Jane Steele"
+        },
+        {
+          "name": "serverest/userEmail",
+          "value": "brittanyfields@example.org"
+        }
+      ]
+    }
+  ]
+}
