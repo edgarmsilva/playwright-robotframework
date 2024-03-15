@@ -1,5 +1,5 @@
-name: Manual Run Web Tests browser and tags
-run-name: Manual - Web Tests Run browser and tags
+name: Manual Run Web Tests Tag and browser
+run-name: Manual - Web Tests Run Tag and browser
 
 on:  
   workflow_dispatch:
@@ -24,11 +24,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     
-    # strategy:
-    #   matrix: 
-    #     browser: [chromium, firefox, webkit]
-    #   fail-fast: false
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
