@@ -55,3 +55,10 @@ jobs:
           report_path: ./results
           gh_access_token: ${{ secrets.GITHUB_TOKEN }}
           show_passed_tests: true
+
+      - name: Publish report
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./results
