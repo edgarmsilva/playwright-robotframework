@@ -11,7 +11,7 @@ on:
         
         browser:
           type: choice
-          description: 'Log level'
+          description: 'Qual Browser a ser executado?'
           required: true
           default: 'chromium'
           options:
