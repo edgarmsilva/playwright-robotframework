@@ -6,15 +6,15 @@
       "localStorage": [
         {
           "name": "serverest/userNome",
-          "value": "Ms. Sara Jordan"
+          "value": "Kirsten Edwards"
         },
         {
           "name": "serverest/userEmail",
-          "value": "cwebb@example.com"
+          "value": "gbailey@example.com"
         },
         {
           "name": "serverest/userToken",
-          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImN3ZWJiQGV4YW1wbGUuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MTA1Mjc3NzIsImV4cCI6MTcxMDUyODM3Mn0.-mbYR3ZMIdbtUb_lv5-EsGpmTUikQXC16rlNy-hcNw0"
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdiYWlsZXlAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1NiIsImlhdCI6MTcxMDUyNzg3OCwiZXhwIjoxNzEwNTI4NDc4fQ.sbWqqY2gbzJAAtcPQE-t49G37dXlL1I9BU2zTqsH2-0"
         }
       ]
     }
