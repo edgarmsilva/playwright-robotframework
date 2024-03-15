@@ -16,6 +16,8 @@ jobs:
 
       - name: Configure Python
         uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
       - name: Configure Node Js
         uses: actions/setup-node@v4
@@ -55,6 +57,10 @@ jobs:
           report_path: ./results
           gh_access_token: ${{ secrets.GITHUB_TOKEN }}
           show_passed_tests: true
+
+      - name: Rename report File to index for gh-pages
+        run: |
+          mv ./results/report.html ./results/index.html
 
       - name: Publish report
         uses: peaceiris/actions-gh-pages@v3
