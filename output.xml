@@ -1,182 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.13 on linux)" generated="2024-03-15T18:38:19.640994" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.13 on linux)" generated="2024-03-15T18:46:36.135910" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/playwright-robotframework/playwright-robotframework/tests">
 <suite id="s1-s1" name="Serve-Rest-Front" source="/home/runner/work/playwright-robotframework/playwright-robotframework/tests/serve-rest-front.robot">
 <kw name="Cadastrar Usuário e Logar" owner="serve-rest-front" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-03-15T18:38:20.679160" level="INFO">{"browser": "firefox", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/traces/95cf271e-8bb2-432c-a413-7abda7e7b363"}</msg>
-<msg time="2024-03-15T18:38:21.337841" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/traces/95cf271e-8bb2-432c-a413-7abda7e7b363"}</msg>
+<msg time="2024-03-15T18:46:36.917073" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/traces/a5b2d699-bb48-4ae1-9c31-882f1294410b"}</msg>
+<msg time="2024-03-15T18:46:37.163617" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/traces/a5b2d699-bb48-4ae1-9c31-882f1294410b"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:20.678206" elapsed="0.659924"/>
+<status status="PASS" start="2024-03-15T18:46:36.916064" elapsed="0.247804"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:22.913181" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/login</msg>
-<msg time="2024-03-15T18:38:22.913281" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-03-15T18:46:37.977391" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/login</msg>
+<msg time="2024-03-15T18:46:37.977498" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>url=${SITE_SERVE_REST}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:21.338642" elapsed="1.574800"/>
+<status status="PASS" start="2024-03-15T18:46:37.164270" elapsed="0.813391"/>
 </kw>
 <kw name="Criar usuário via API" owner="serve-rest-front">
 <kw name="Email" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:22.914973" level="INFO">${EMAIL} = codymoore@example.org</msg>
+<msg time="2024-03-15T18:46:37.978860" level="INFO">${EMAIL} = navarroanna@example.net</msg>
 <var>${EMAIL}</var>
-<status status="PASS" start="2024-03-15T18:38:22.914358" elapsed="0.000650"/>
+<status status="PASS" start="2024-03-15T18:46:37.978339" elapsed="0.000553"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-03-15T18:38:22.915425" level="INFO">${EMAIL} = codymoore@example.org</msg>
+<msg time="2024-03-15T18:46:37.979295" level="INFO">${EMAIL} = navarroanna@example.net</msg>
 <arg>${EMAIL}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-03-15T18:38:22.915173" elapsed="0.000300"/>
+<status status="PASS" start="2024-03-15T18:46:37.979049" elapsed="0.000292"/>
 </kw>
 <kw name="Name" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:22.915952" level="INFO">${NOME} = Lindsay Carey</msg>
+<msg time="2024-03-15T18:46:37.979741" level="INFO">${NOME} = Stephen Kelley</msg>
 <var>${NOME}</var>
 <doc>:example: 'John Doe'</doc>
-<status status="PASS" start="2024-03-15T18:38:22.915601" elapsed="0.000382"/>
+<status status="PASS" start="2024-03-15T18:46:37.979463" elapsed="0.000307"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-03-15T18:38:22.916323" level="INFO">${NOME} = Lindsay Carey</msg>
+<msg time="2024-03-15T18:46:37.980092" level="INFO">${NOME} = Stephen Kelley</msg>
 <arg>${NOME}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-03-15T18:38:22.916115" elapsed="0.000252"/>
+<status status="PASS" start="2024-03-15T18:46:37.979894" elapsed="0.000241"/>
 </kw>
 <kw name="Http" owner="Browser">
-<msg time="2024-03-15T18:38:23.089189" level="INFO">{'status': 201, 'body': {'message': 'Cadastro realizado com sucesso', '_id': '5TlRhETMlV7bpMsd'}, 'headers': {'content-length': '82', 'content-type': 'application/json; charset=utf-8'}, 'type': 'cors', 'statusText': '', 'url': 'https://serverest.dev/usuarios', 'ok': True, 'redirected': False}</msg>
-<msg time="2024-03-15T18:38:23.089620" level="INFO">${resposta} = {'status': 201, 'body': {'message': 'Cadastro realizado com sucesso', '_id': '5TlRhETMlV7bpMsd'}, 'headers': {'content-length': '82', 'content-type': 'application/json; charset=utf-8'}, 'type': 'cors'...</msg>
+<msg time="2024-03-15T18:46:42.503469" level="INFO">{'status': 201, 'body': {'message': 'Cadastro realizado com sucesso', '_id': 'zUQ3AQcczXdoh3oY'}, 'headers': {'content-length': '82', 'content-type': 'application/json; charset=utf-8'}, 'type': 'cors', 'statusText': '', 'url': 'https://serverest.dev/usuarios', 'ok': True, 'redirected': False}</msg>
+<msg time="2024-03-15T18:46:42.503855" level="INFO">${resposta} = {'status': 201, 'body': {'message': 'Cadastro realizado com sucesso', '_id': 'zUQ3AQcczXdoh3oY'}, 'headers': {'content-length': '82', 'content-type': 'application/json; charset=utf-8'}, 'type': 'cors'...</msg>
 <var>${resposta}</var>
 <arg>url=https://serverest.dev/usuarios</arg>
 <arg>method=POST</arg>
 <arg>body={"nome": "${NOME}","email": "${EMAIL}","password": "123456","administrador": "true"}</arg>
 <tag>HTTP</tag>
 <doc>Performs an HTTP request in the current browser context</doc>
-<status status="PASS" start="2024-03-15T18:38:22.916499" elapsed="0.173162"/>
+<status status="PASS" start="2024-03-15T18:46:37.980260" elapsed="4.523631"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2024-03-15T18:38:23.090533" level="INFO">Argument types are:
+<msg time="2024-03-15T18:46:42.504731" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${resposta["status"]}</arg>
 <arg>201</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2024-03-15T18:38:23.089941" elapsed="0.000668"/>
+<status status="PASS" start="2024-03-15T18:46:42.504145" elapsed="0.000654"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:22.913899" elapsed="0.176821"/>
+<status status="PASS" start="2024-03-15T18:46:37.978030" elapsed="4.526871"/>
 </kw>
 <kw name="Logar com o usuário cadastrado via API" owner="serve-rest-front">
 <kw name="Http" owner="Browser">
-<msg time="2024-03-15T18:38:23.150084" level="INFO">{'status': 200, 'body': {'message': 'Login realizado com sucesso', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvZHltb29yZUBleGFtcGxlLm9yZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNzEwNTI3OTAzLCJleHAiOjE3MTA1Mjg1MDN9.4hZacQtibYmWWe8bO9ygPopGYuJ8v-QhDpWy8zPsdgc'}, 'headers': {'content-length': '277', 'content-type': 'application/json; charset=utf-8'}, 'type': 'cors', 'statusText': '', 'url': 'https://serverest.dev/login', 'ok': True, 'redirected': False}</msg>
-<msg time="2024-03-15T18:38:23.150427" level="INFO">${resposta} = {'status': 200, 'body': {'message': 'Login realizado com sucesso', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvZHltb29yZUBleGFtcGxlLm9yZyIsInBhc3N3b3JkIjoiMTIzNDU2Iiw...</msg>
+<msg time="2024-03-15T18:46:42.589285" level="INFO">{'status': 200, 'body': {'message': 'Login realizado com sucesso', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hdmFycm9hbm5hQGV4YW1wbGUubmV0IiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MTA1Mjg0MDIsImV4cCI6MTcxMDUyOTAwMn0.iFw7wPImsV0148jhuTdDoW7vqTVviMdpDbhyXfJHamI'}, 'headers': {'content-length': '280', 'content-type': 'application/json; charset=utf-8'}, 'type': 'cors', 'statusText': '', 'url': 'https://serverest.dev/login', 'ok': True, 'redirected': False}</msg>
+<msg time="2024-03-15T18:46:42.589595" level="INFO">${resposta} = {'status': 200, 'body': {'message': 'Login realizado com sucesso', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hdmFycm9hbm5hQGV4YW1wbGUubmV0IiwicGFzc3dvcmQiOiIxMjM0NTY...</msg>
 <var>${resposta}</var>
 <arg>url=https://serverest.dev/login</arg>
 <arg>method=POST</arg>
 <arg>body={"email": "${EMAIL}", "password": "123456"}</arg>
 <tag>HTTP</tag>
 <doc>Performs an HTTP request in the current browser context</doc>
-<status status="PASS" start="2024-03-15T18:38:23.091185" elapsed="0.059281"/>
+<status status="PASS" start="2024-03-15T18:46:42.505331" elapsed="0.084300"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2024-03-15T18:38:23.151334" level="INFO">Argument types are:
+<msg time="2024-03-15T18:46:42.590451" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${resposta["status"]}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2024-03-15T18:38:23.150754" elapsed="0.000653"/>
+<status status="PASS" start="2024-03-15T18:46:42.589882" elapsed="0.000635"/>
 </kw>
 <kw name="LocalStorage Set Item" owner="Browser">
-<msg time="2024-03-15T18:38:23.158041" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:42.595109" level="INFO">JavaScript executed successfully.</msg>
 <arg>serverest/userNome</arg>
 <arg>${NOME}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Save data to the local storage.</doc>
-<status status="PASS" start="2024-03-15T18:38:23.151562" elapsed="0.006620"/>
+<status status="PASS" start="2024-03-15T18:46:42.590657" elapsed="0.004523"/>
 </kw>
 <kw name="LocalStorage Set Item" owner="Browser">
-<msg time="2024-03-15T18:38:23.163459" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:42.598550" level="INFO">JavaScript executed successfully.</msg>
 <arg>serverest/userEmail</arg>
 <arg>${EMAIL}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Save data to the local storage.</doc>
-<status status="PASS" start="2024-03-15T18:38:23.158457" elapsed="0.005158"/>
+<status status="PASS" start="2024-03-15T18:46:42.595332" elapsed="0.003315"/>
 </kw>
 <kw name="LocalStorage Set Item" owner="Browser">
-<msg time="2024-03-15T18:38:23.170736" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:42.603646" level="INFO">JavaScript executed successfully.</msg>
 <arg>serverest/userToken</arg>
 <arg>${resposta["body"]["authorization"]}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Save data to the local storage.</doc>
-<status status="PASS" start="2024-03-15T18:38:23.163970" elapsed="0.006921"/>
+<status status="PASS" start="2024-03-15T18:46:42.598860" elapsed="0.004877"/>
 </kw>
 <kw name="Go To" owner="Browser">
-<msg time="2024-03-15T18:38:23.448396" level="INFO">Successfully opened URL https://front.serverest.dev/admin/home</msg>
+<msg time="2024-03-15T18:46:43.072984" level="INFO">Successfully opened URL https://front.serverest.dev/admin/home</msg>
 <arg>https://front.serverest.dev/admin/home</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2024-03-15T18:38:23.171182" elapsed="0.277414"/>
+<status status="PASS" start="2024-03-15T18:46:42.603946" elapsed="0.469256"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:23.797123" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:43.241051" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:23.448994" elapsed="0.348349"/>
+<status status="PASS" start="2024-03-15T18:46:43.073531" elapsed="0.167730"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:23.090944" elapsed="0.706552"/>
+<status status="PASS" start="2024-03-15T18:46:42.505108" elapsed="0.736304"/>
 </kw>
 <kw name="Save Storage State" owner="Browser">
-<msg time="2024-03-15T18:38:24.006498" level="INFO">Current context state is saved to: /home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/71628ed2-dde3-422a-913b-57426bdd8f46.json</msg>
-<msg time="2024-03-15T18:38:24.006740" level="INFO">${STORAGE_FILE} = /home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/71628ed2-dde3-422a-913b-57426bdd8f46.json</msg>
+<msg time="2024-03-15T18:46:43.285414" level="INFO">Current context state is saved to: /home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/39a2bef7-c205-4244-a813-67a8c239c3dc.json</msg>
+<msg time="2024-03-15T18:46:43.285687" level="INFO">${STORAGE_FILE} = /home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/39a2bef7-c205-4244-a813-67a8c239c3dc.json</msg>
 <var>${STORAGE_FILE}</var>
 <tag>BrowserControl</tag>
 <tag>Getter</tag>
 <doc>Saves the current active context storage state to a file.</doc>
-<status status="PASS" start="2024-03-15T18:38:23.797707" elapsed="0.209071"/>
+<status status="PASS" start="2024-03-15T18:46:43.241621" elapsed="0.044110"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-03-15T18:38:24.007384" level="INFO">${STORAGE_FILE} = /home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/71628ed2-dde3-422a-913b-57426bdd8f46.json</msg>
+<msg time="2024-03-15T18:46:43.286451" level="INFO">${STORAGE_FILE} = /home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/39a2bef7-c205-4244-a813-67a8c239c3dc.json</msg>
 <arg>${STORAGE_FILE}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.007082" elapsed="0.000354"/>
+<status status="PASS" start="2024-03-15T18:46:43.286078" elapsed="0.000436"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:20.677012" elapsed="3.330519"/>
+<status status="PASS" start="2024-03-15T18:46:36.914833" elapsed="6.371793"/>
 </kw>
 <test id="s1-s1-t1" name="Login com sucesso Serverest-front" line="7">
 <kw name="Abrir o Navegador" owner="serve-rest-front">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-03-15T18:38:24.024517" level="INFO">Switching browser to browser=769c59b8-c773-4126-ad5d-5822d74121a8</msg>
-<msg time="2024-03-15T18:38:24.027581" level="INFO">Successfully changed active browser: browser=769c59b8-c773-4126-ad5d-5822d74121a8</msg>
-<msg time="2024-03-15T18:38:24.027686" level="INFO">Reusing existing browser with id: browser=769c59b8-c773-4126-ad5d-5822d74121a8</msg>
+<msg time="2024-03-15T18:46:43.292345" level="INFO">Switching browser to browser=db32f996-9552-4d9f-a31d-c8f415521bf7</msg>
+<msg time="2024-03-15T18:46:43.294482" level="INFO">Successfully changed active browser: browser=db32f996-9552-4d9f-a31d-c8f415521bf7</msg>
+<msg time="2024-03-15T18:46:43.294545" level="INFO">Reusing existing browser with id: browser=db32f996-9552-4d9f-a31d-c8f415521bf7</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.023652" elapsed="0.004109"/>
+<status status="PASS" start="2024-03-15T18:46:43.291715" elapsed="0.002889"/>
 </kw>
 <kw name="Uuid 4" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:24.028228" level="INFO">${TRACE_NAME} = 060c6e46-2f1e-4b25-99db-89ba8f48a920</msg>
+<msg time="2024-03-15T18:46:43.294973" level="INFO">${TRACE_NAME} = ba7741fb-5588-4042-a8b3-be43dda39ed2</msg>
 <var>${TRACE_NAME}</var>
 <doc>Generate a random UUID4 object and cast it to another type if specified using a callable ``cast_to``.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.027980" elapsed="0.000281"/>
+<status status="PASS" start="2024-03-15T18:46:43.294763" elapsed="0.000240"/>
 </kw>
 <kw name="Get Current Date" owner="DateTime">
-<msg time="2024-03-15T18:38:24.028642" level="INFO">${NOW} = 15-03-2024_183824</msg>
+<msg time="2024-03-15T18:46:43.295359" level="INFO">${NOW} = 15-03-2024_184643</msg>
 <var>${NOW}</var>
 <arg>result_format=%d-%m-%Y_%H%M%S</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.028400" elapsed="0.000274"/>
+<status status="PASS" start="2024-03-15T18:46:43.295133" elapsed="0.000255"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2024-03-15T18:38:24.029573" level="INFO">{
+<msg time="2024-03-15T18:46:43.296169" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -186,32 +186,32 @@
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
   "viewport": {
-    "height": 800,
-    "width": 1200
+    "width": 1200,
+    "height": 800
   }
 }</msg>
-<msg time="2024-03-15T18:38:24.035211" level="INFO">Successfully created context. </msg>
-<msg time="2024-03-15T18:38:24.035274" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<msg time="2024-03-15T18:46:43.301458" level="INFO">Successfully created context. </msg>
+<msg time="2024-03-15T18:46:43.301507" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={'width': 1200, 'height': 800}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.028829" elapsed="0.006548"/>
+<status status="PASS" start="2024-03-15T18:46:43.295526" elapsed="0.006061"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:24.023087" elapsed="0.012428"/>
+<status status="PASS" start="2024-03-15T18:46:43.291393" elapsed="0.010306"/>
 </kw>
 <kw name="Ir para o site Serve Rest Front" owner="serve-rest-front">
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:24.777188" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/login</msg>
+<msg time="2024-03-15T18:46:44.020912" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/login</msg>
 <arg>url=${SITE_SERVE_REST}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.036179" elapsed="0.741340"/>
+<status status="PASS" start="2024-03-15T18:46:43.302169" elapsed="0.719068"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2024-03-15T18:38:24.784408" level="INFO">Title: 'Front - ServeRest'</msg>
-<msg time="2024-03-15T18:38:24.784584" level="INFO">${title} = Front - ServeRest</msg>
+<msg time="2024-03-15T18:46:44.084874" level="INFO">Title: 'Front - ServeRest'</msg>
+<msg time="2024-03-15T18:46:44.085103" level="INFO">${title} = Front - ServeRest</msg>
 <var>${title}</var>
 <arg>==</arg>
 <arg>Front - ServeRest</arg>
@@ -219,15 +219,15 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.777953" elapsed="0.006663"/>
+<status status="PASS" start="2024-03-15T18:46:44.021629" elapsed="0.063507"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-03-15T18:38:24.785047" level="INFO">Front - ServeRest</msg>
+<msg time="2024-03-15T18:46:44.085639" level="INFO">Front - ServeRest</msg>
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.784832" elapsed="0.000275"/>
+<status status="PASS" start="2024-03-15T18:46:44.085406" elapsed="0.000283"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:24.035832" elapsed="0.749411"/>
+<status status="PASS" start="2024-03-15T18:46:43.301886" elapsed="0.783892"/>
 </kw>
 <kw name="Preencher os dados do novo usuario e cadastrar" owner="serve-rest-front">
 <kw name="Click" owner="Browser">
@@ -235,92 +235,92 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.786083" elapsed="0.127694"/>
+<status status="PASS" start="2024-03-15T18:46:44.086301" elapsed="0.187951"/>
 </kw>
 <kw name="Email" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:24.914584" level="INFO">${EMAIL} = efoster@example.com</msg>
+<msg time="2024-03-15T18:46:44.275057" level="INFO">${EMAIL} = andrea23@example.com</msg>
 <var>${EMAIL}</var>
-<status status="PASS" start="2024-03-15T18:38:24.914106" elapsed="0.000514"/>
+<status status="PASS" start="2024-03-15T18:46:44.274557" elapsed="0.000560"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-03-15T18:38:24.915034" level="INFO">${EMAIL} = efoster@example.com</msg>
+<msg time="2024-03-15T18:46:44.275525" level="INFO">${EMAIL} = andrea23@example.com</msg>
 <arg>${EMAIL}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.914786" elapsed="0.000297"/>
+<status status="PASS" start="2024-03-15T18:46:44.275279" elapsed="0.000292"/>
 </kw>
 <kw name="Name" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:24.915503" level="INFO">${NOME} = Brandy Mercado</msg>
+<msg time="2024-03-15T18:46:44.276230" level="INFO">${NOME} = Donna Peterson</msg>
 <var>${NOME}</var>
 <doc>:example: 'John Doe'</doc>
-<status status="PASS" start="2024-03-15T18:38:24.915216" elapsed="0.000317"/>
+<status status="PASS" start="2024-03-15T18:46:44.275745" elapsed="0.000530"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-03-15T18:38:24.915938" level="INFO">${NOME} = Brandy Mercado</msg>
+<msg time="2024-03-15T18:46:44.276797" level="INFO">${NOME} = Donna Peterson</msg>
 <arg>${NOME}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.915720" elapsed="0.000265"/>
+<status status="PASS" start="2024-03-15T18:46:44.276471" elapsed="0.000392"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-03-15T18:38:24.916641" level="INFO">Fills the text 'Brandy Mercado' in the given field.</msg>
+<msg time="2024-03-15T18:46:44.277768" level="INFO">Fills the text 'Donna Peterson' in the given field.</msg>
 <arg>css=input#nome</arg>
 <arg>${NOME}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.916127" elapsed="0.023603"/>
+<status status="PASS" start="2024-03-15T18:46:44.277067" elapsed="0.019154"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-03-15T18:38:24.940679" level="INFO">Fills the text 'efoster@example.com' in the given field.</msg>
+<msg time="2024-03-15T18:46:44.297200" level="INFO">Fills the text 'andrea23@example.com' in the given field.</msg>
 <arg>css=input#email</arg>
 <arg>${EMAIL}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.940058" elapsed="0.019690"/>
+<status status="PASS" start="2024-03-15T18:46:44.296573" elapsed="0.012339"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-03-15T18:38:24.960643" level="INFO">Fills the text '123456' in the given field.</msg>
+<msg time="2024-03-15T18:46:44.309884" level="INFO">Fills the text '123456' in the given field.</msg>
 <arg>css=input#password</arg>
 <arg>123456</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.960074" elapsed="0.019168"/>
+<status status="PASS" start="2024-03-15T18:46:44.309234" elapsed="0.011500"/>
 </kw>
 <kw name="Check Checkbox" owner="Browser">
 <arg>css=input#administrador</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:24.979653" elapsed="0.066895"/>
+<status status="PASS" start="2024-03-15T18:46:44.321028" elapsed="0.047286"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>xpath=//*[@id="root"]//button &gt;&gt; text="Cadastrar"</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:25.046882" elapsed="0.072208"/>
+<status status="PASS" start="2024-03-15T18:46:44.368655" elapsed="0.050994"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:25.167403" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:44.743589" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:25.119558" elapsed="0.048030"/>
+<status status="PASS" start="2024-03-15T18:46:44.419966" elapsed="0.323867"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:24.785602" elapsed="0.382192"/>
+<status status="PASS" start="2024-03-15T18:46:44.086010" elapsed="0.658035"/>
 </kw>
 <kw name="Conferir Usuario Cadastrado com sucesso" owner="serve-rest-front">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-03-15T18:38:28.484253" level="INFO">Waited for Element with selector h1 at state visible</msg>
+<msg time="2024-03-15T18:46:48.045297" level="INFO">Waited for Element with selector h1 at state visible</msg>
 <arg>h1</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-03-15T18:38:25.168449" elapsed="3.316012"/>
+<status status="PASS" start="2024-03-15T18:46:44.744791" elapsed="3.300712"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:28.518418" level="INFO">Text: 'Bem Vindo Brandy Mercado'</msg>
+<msg time="2024-03-15T18:46:48.068951" level="INFO">Text: 'Bem Vindo Donna Peterson'</msg>
 <arg>h1</arg>
 <arg>==</arg>
 <arg>Bem Vindo ${NOME}</arg>
@@ -328,10 +328,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:28.484761" elapsed="0.033861"/>
+<status status="PASS" start="2024-03-15T18:46:48.045786" elapsed="0.023324"/>
 </kw>
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-03-15T18:38:28.549422" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-03-15T18:46:48.090674" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>button[data-testid='logout']</arg>
 <arg>validate</arg>
 <arg>value &amp; visible</arg>
@@ -339,16 +339,17 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:28.518926" elapsed="0.030646"/>
+<status status="PASS" start="2024-03-15T18:46:48.069400" elapsed="0.021436"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:25.168054" elapsed="3.381679"/>
+<status status="PASS" start="2024-03-15T18:46:44.744360" elapsed="3.346655"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:24.007669" elapsed="4.542260"/>
+<tag>login_sucesso</tag>
+<status status="PASS" start="2024-03-15T18:46:43.286757" elapsed="4.804460"/>
 </test>
-<test id="s1-s1-t2" name="Desafio: Conferir se o novo usuário é mostrado na listagem de usuários" line="13">
+<test id="s1-s1-t2" name="Desafio: Conferir se o novo usuário é mostrado na listagem de usuários" line="14">
 <kw name="Abrir o site Serve Rest Front Logado" owner="serve-rest-front">
 <kw name="New Context" owner="Browser">
-<msg time="2024-03-15T18:38:28.610390" level="INFO">{
+<msg time="2024-03-15T18:46:48.128563" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -357,31 +358,31 @@
   "offline": false,
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
-  "storageState": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/71628ed2-dde3-422a-913b-57426bdd8f46.json",
+  "storageState": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/39a2bef7-c205-4244-a813-67a8c239c3dc.json",
   "viewport": {
-    "height": 800,
-    "width": 1200
+    "width": 1200,
+    "height": 800
   }
 }</msg>
-<msg time="2024-03-15T18:38:28.830304" level="INFO">Successfully created context. </msg>
-<msg time="2024-03-15T18:38:28.830431" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'storageState': '/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/71628ed2-dde3-422a-913b-57426bdd8f46.json', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<msg time="2024-03-15T18:46:48.243452" level="INFO">Successfully created context. </msg>
+<msg time="2024-03-15T18:46:48.243553" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'storageState': '/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/39a2bef7-c205-4244-a813-67a8c239c3dc.json', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={'width': 1200, 'height': 800}</arg>
 <arg>storageState=${STORAGE_FILE}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:28.609511" elapsed="0.221353"/>
+<status status="PASS" start="2024-03-15T18:46:48.127673" elapsed="0.115999"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:29.621128" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/admin/home</msg>
+<msg time="2024-03-15T18:46:48.976279" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/admin/home</msg>
 <arg>url=https://front.serverest.dev/admin/home</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:28.831266" elapsed="0.790215"/>
+<status status="PASS" start="2024-03-15T18:46:48.243964" elapsed="0.732671"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:29.750513" level="INFO">Text: 'Bem Vindo Lindsay Carey'</msg>
+<msg time="2024-03-15T18:46:49.205966" level="INFO">Text: 'Bem Vindo Stephen Kelley'</msg>
 <arg>h1</arg>
 <arg>==</arg>
 <arg>Bem Vindo ${NOME}</arg>
@@ -389,15 +390,15 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:29.621793" elapsed="0.128894"/>
+<status status="PASS" start="2024-03-15T18:46:48.977028" elapsed="0.229093"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:30.082183" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:49.347358" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:29.750998" elapsed="0.331357"/>
+<status status="PASS" start="2024-03-15T18:46:49.206404" elapsed="0.141120"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:28.608954" elapsed="1.473554"/>
+<status status="PASS" start="2024-03-15T18:46:48.127274" elapsed="1.220395"/>
 </kw>
 <kw name="Acessar a Lista de usuários" owner="serve-rest-front">
 <kw name="Click" owner="Browser">
@@ -405,10 +406,10 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.083133" elapsed="0.053673"/>
+<status status="PASS" start="2024-03-15T18:46:49.348271" elapsed="0.026437"/>
 </kw>
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-03-15T18:38:30.162271" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-03-15T18:46:49.393419" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>h1</arg>
 <arg>validate</arg>
 <arg>visible</arg>
@@ -416,10 +417,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.137230" elapsed="0.025201"/>
+<status status="PASS" start="2024-03-15T18:46:49.375151" elapsed="0.018425"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:30.176201" level="INFO">Text: 'Lista dos usuários'</msg>
+<msg time="2024-03-15T18:46:49.403929" level="INFO">Text: 'Lista dos usuários'</msg>
 <arg>h1</arg>
 <arg>==</arg>
 <arg>Lista dos usuários</arg>
@@ -427,21 +428,21 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.162722" elapsed="0.013636"/>
+<status status="PASS" start="2024-03-15T18:46:49.393862" elapsed="0.010180"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:30.217200" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:49.602946" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.176640" elapsed="0.040750"/>
+<status status="PASS" start="2024-03-15T18:46:49.404288" elapsed="0.198824"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:30.082769" elapsed="0.134785"/>
+<status status="PASS" start="2024-03-15T18:46:49.347922" elapsed="0.255337"/>
 </kw>
 <kw name="Conferir que o usuário aparece na listagem" owner="serve-rest-front">
 <kw name="Get Table Cell Element" owner="Browser">
-<msg time="2024-03-15T18:38:30.229488" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-03-15T18:38:30.307403" level="INFO">Locator found successfully.</msg>
-<msg time="2024-03-15T18:38:30.307745" level="INFO">${elemento} = xpath=//table[@class="table table-striped"] &gt;&gt; tr &gt;&gt; nth=10 &gt;&gt; &gt; * &gt;&gt; nth=0</msg>
+<msg time="2024-03-15T18:46:49.612319" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:49.636995" level="INFO">Locator found successfully.</msg>
+<msg time="2024-03-15T18:46:49.637195" level="INFO">${elemento} = xpath=//table[@class="table table-striped"] &gt;&gt; tr &gt;&gt; nth=95 &gt;&gt; &gt; * &gt;&gt; nth=0</msg>
 <var>${elemento}</var>
 <arg>xpath=//table[@class="table table-striped"]</arg>
 <arg>"Nome"</arg>
@@ -449,10 +450,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the Web Element that has the same column index and same row index as the selected elements.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.218239" elapsed="0.089600"/>
+<status status="PASS" start="2024-03-15T18:46:49.603890" elapsed="0.033390"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:30.327382" level="INFO">Text: 'Lindsay Carey'</msg>
+<msg time="2024-03-15T18:46:49.649605" level="INFO">Text: 'Stephen Kelley'</msg>
 <arg>${elemento}</arg>
 <arg>==</arg>
 <arg>${NOME}</arg>
@@ -460,7 +461,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.308148" elapsed="0.019419"/>
+<status status="PASS" start="2024-03-15T18:46:49.637524" elapsed="0.012218"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${elemento}</arg>
@@ -468,30 +469,31 @@
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.327920" elapsed="0.028505"/>
+<status status="PASS" start="2024-03-15T18:46:49.649999" elapsed="0.027773"/>
 </kw>
 <kw name="Highlight Elements" owner="Browser">
-<msg time="2024-03-15T18:38:30.375122" level="INFO">Highlighted 1 elements for 5000.</msg>
+<msg time="2024-03-15T18:46:49.689379" level="INFO">Highlighted 1 elements for 5000.</msg>
 <arg>${elemento}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.356763" elapsed="0.018558"/>
+<status status="PASS" start="2024-03-15T18:46:49.678032" elapsed="0.011468"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:30.413995" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:49.793259" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.375616" elapsed="0.038553"/>
+<status status="PASS" start="2024-03-15T18:46:49.689710" elapsed="0.103726"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:30.217837" elapsed="0.196490"/>
+<status status="PASS" start="2024-03-15T18:46:49.603522" elapsed="0.190065"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:28.593019" elapsed="1.821474"/>
+<tag>lista_usuario</tag>
+<status status="PASS" start="2024-03-15T18:46:48.123790" elapsed="1.669959"/>
 </test>
-<test id="s1-s1-t3" name="Desafio 2: cadastrar novo produto e validar que ele aparece na listagem" line="18">
+<test id="s1-s1-t3" name="Desafio 2: cadastrar novo produto e validar que ele aparece na listagem" line="20">
 <kw name="Abrir o site Serve Rest Front Logado" owner="serve-rest-front">
 <kw name="New Context" owner="Browser">
-<msg time="2024-03-15T18:38:30.465714" level="INFO">{
+<msg time="2024-03-15T18:46:49.829284" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -500,31 +502,31 @@ unless it is completely visible.</doc>
   "offline": false,
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
-  "storageState": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/71628ed2-dde3-422a-913b-57426bdd8f46.json",
+  "storageState": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/39a2bef7-c205-4244-a813-67a8c239c3dc.json",
   "viewport": {
-    "height": 800,
-    "width": 1200
+    "width": 1200,
+    "height": 800
   }
 }</msg>
-<msg time="2024-03-15T18:38:30.693737" level="INFO">Successfully created context. </msg>
-<msg time="2024-03-15T18:38:30.693855" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'storageState': '/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/71628ed2-dde3-422a-913b-57426bdd8f46.json', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<msg time="2024-03-15T18:46:49.900210" level="INFO">Successfully created context. </msg>
+<msg time="2024-03-15T18:46:49.900309" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'storageState': '/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/39a2bef7-c205-4244-a813-67a8c239c3dc.json', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={'width': 1200, 'height': 800}</arg>
 <arg>storageState=${STORAGE_FILE}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.464865" elapsed="0.229144"/>
+<status status="PASS" start="2024-03-15T18:46:49.828413" elapsed="0.072016"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:31.485229" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/admin/home</msg>
+<msg time="2024-03-15T18:46:50.585055" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/admin/home</msg>
 <arg>url=https://front.serverest.dev/admin/home</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:30.694389" elapsed="0.791185"/>
+<status status="PASS" start="2024-03-15T18:46:49.900782" elapsed="0.684532"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:31.541448" level="INFO">Text: 'Bem Vindo Lindsay Carey'</msg>
+<msg time="2024-03-15T18:46:50.817875" level="INFO">Text: 'Bem Vindo Stephen Kelley'</msg>
 <arg>h1</arg>
 <arg>==</arg>
 <arg>Bem Vindo ${NOME}</arg>
@@ -532,138 +534,140 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.485979" elapsed="0.055674"/>
+<status status="PASS" start="2024-03-15T18:46:50.585611" elapsed="0.232425"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:31.846902" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:50.947935" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.542038" elapsed="0.305107"/>
+<status status="PASS" start="2024-03-15T18:46:50.818323" elapsed="0.129786"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:30.464423" elapsed="1.382936"/>
+<status status="PASS" start="2024-03-15T18:46:49.828048" elapsed="1.120206"/>
 </kw>
 <kw name="Cadastrar um novo produto" owner="serve-rest-front">
 <kw name="Random Number" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:31.848637" level="INFO">${NUMBER} = 368</msg>
+<msg time="2024-03-15T18:46:50.949269" level="INFO">${NUMBER} = 375</msg>
 <var>${NUMBER}</var>
 <arg>digits=3</arg>
 <doc>Generate a random integer according to the following rules:</doc>
-<status status="PASS" start="2024-03-15T18:38:31.848267" elapsed="0.000410"/>
+<status status="PASS" start="2024-03-15T18:46:50.948958" elapsed="0.000343"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-03-15T18:38:31.849098" level="INFO">${NOME_PRODUTO} = Product No_368</msg>
+<msg time="2024-03-15T18:46:50.949626" level="INFO">${NOME_PRODUTO} = Product No_375</msg>
 <var>${NOME_PRODUTO}</var>
 <arg>Product No_${NUMBER}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.848854" elapsed="0.000284"/>
+<status status="PASS" start="2024-03-15T18:46:50.949440" elapsed="0.000214"/>
 </kw>
 <kw name="Random Number" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:31.849587" level="INFO">${PRECO_PRODUTO} = 462</msg>
+<msg time="2024-03-15T18:46:50.949995" level="INFO">${PRECO_PRODUTO} = 44</msg>
 <var>${PRECO_PRODUTO}</var>
 <arg>digits=3</arg>
 <doc>Generate a random integer according to the following rules:</doc>
-<status status="PASS" start="2024-03-15T18:38:31.849325" elapsed="0.000298"/>
+<status status="PASS" start="2024-03-15T18:46:50.949775" elapsed="0.000253"/>
 </kw>
 <kw name="Convert To String" owner="BuiltIn">
-<msg time="2024-03-15T18:38:31.850065" level="INFO">${PRECO_PRODUTO} = 462</msg>
+<msg time="2024-03-15T18:46:50.950394" level="INFO">${PRECO_PRODUTO} = 44</msg>
 <var>${PRECO_PRODUTO}</var>
 <arg>${PRECO_PRODUTO}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.849784" elapsed="0.000325"/>
+<status status="PASS" start="2024-03-15T18:46:50.950177" elapsed="0.000244"/>
 </kw>
 <kw name="Text" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:31.850668" level="INFO">${DESCRICAO_PRODUTO} = Yet direction money religious tend reflect marriage. Begin reduce surface change turn. City early brother.</msg>
+<msg time="2024-03-15T18:46:50.950784" level="INFO">${DESCRICAO_PRODUTO} = Garden of conference none. Open face among natural east human. Call entire get lawyer hit.
+Consider force fine standard analysis. Federal long establish above ball executive.</msg>
 <var>${DESCRICAO_PRODUTO}</var>
 <doc>Generate a text string.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.850307" elapsed="0.000405"/>
+<status status="PASS" start="2024-03-15T18:46:50.950539" elapsed="0.000274"/>
 </kw>
 <kw name="Random Number" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:31.851184" level="INFO">${QTDE_PRODUTO} = 58</msg>
+<msg time="2024-03-15T18:46:50.951139" level="INFO">${QTDE_PRODUTO} = 77</msg>
 <var>${QTDE_PRODUTO}</var>
 <arg>digits=2</arg>
 <doc>Generate a random integer according to the following rules:</doc>
-<status status="PASS" start="2024-03-15T18:38:31.850889" elapsed="0.000337"/>
+<status status="PASS" start="2024-03-15T18:46:50.950936" elapsed="0.000230"/>
 </kw>
 <kw name="Convert To String" owner="BuiltIn">
-<msg time="2024-03-15T18:38:31.851703" level="INFO">${QTDE_PRODUTO} = 58</msg>
+<msg time="2024-03-15T18:46:50.951471" level="INFO">${QTDE_PRODUTO} = 77</msg>
 <var>${QTDE_PRODUTO}</var>
 <arg>${QTDE_PRODUTO}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.851406" elapsed="0.000336"/>
+<status status="PASS" start="2024-03-15T18:46:50.951284" elapsed="0.000213"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-03-15T18:38:31.852252" level="INFO">${NOME_PRODUTO} = Product No_368</msg>
+<msg time="2024-03-15T18:46:50.951825" level="INFO">${NOME_PRODUTO} = Product No_375</msg>
 <arg>${NOME_PRODUTO}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.851933" elapsed="0.000392"/>
+<status status="PASS" start="2024-03-15T18:46:50.951624" elapsed="0.000242"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-03-15T18:38:31.852843" level="INFO">${PRECO_PRODUTO} = 462</msg>
+<msg time="2024-03-15T18:46:50.952165" level="INFO">${PRECO_PRODUTO} = 44</msg>
 <arg>${PRECO_PRODUTO}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.852522" elapsed="0.000585"/>
+<status status="PASS" start="2024-03-15T18:46:50.951981" elapsed="0.000271"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-03-15T18:38:31.853720" level="INFO">${QTDE_PRODUTO} = 58</msg>
+<msg time="2024-03-15T18:46:50.952590" level="INFO">${QTDE_PRODUTO} = 77</msg>
 <arg>${QTDE_PRODUTO}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.853446" elapsed="0.000332"/>
+<status status="PASS" start="2024-03-15T18:46:50.952376" elapsed="0.000257"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>css=a[data-testid='cadastrarProdutos']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.853948" elapsed="0.075902"/>
+<status status="PASS" start="2024-03-15T18:46:50.952756" elapsed="0.039833"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-03-15T18:38:31.931026" level="INFO">Fills the text 'Product No_368' in the given field.</msg>
+<msg time="2024-03-15T18:46:50.995264" level="INFO">Fills the text 'Product No_375' in the given field.</msg>
 <arg>css=input[data-testid='nome']</arg>
 <arg>${NOME_PRODUTO}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.930272" elapsed="0.021520"/>
+<status status="PASS" start="2024-03-15T18:46:50.994360" elapsed="0.016652"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-03-15T18:38:31.953081" level="INFO">Fills the text '462' in the given field.</msg>
+<msg time="2024-03-15T18:46:51.012021" level="INFO">Fills the text '44' in the given field.</msg>
 <arg>css=input[data-testid='preco']</arg>
 <arg>${PRECO_PRODUTO}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.952244" elapsed="0.019956"/>
+<status status="PASS" start="2024-03-15T18:46:51.011335" elapsed="0.014113"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-03-15T18:38:31.973347" level="INFO">Fills the text 'Yet direction money religious tend reflect marriage. Begin reduce surface change turn. City early brother.' in the given field.</msg>
+<msg time="2024-03-15T18:46:51.026706" level="INFO">Fills the text 'Garden of conference none. Open face among natural east human. Call entire get lawyer hit.
+Consider force fine standard analysis. Federal long establish above ball executive.' in the given field.</msg>
 <arg>css=textarea[data-testid='descricao']</arg>
 <arg>${DESCRICAO_PRODUTO}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.972633" elapsed="0.017951"/>
+<status status="PASS" start="2024-03-15T18:46:51.025861" elapsed="0.013522"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-03-15T18:38:31.991550" level="INFO">Fills the text '58' in the given field.</msg>
+<msg time="2024-03-15T18:46:51.040324" level="INFO">Fills the text '77' in the given field.</msg>
 <arg>css=input[data-testid='quantity']</arg>
 <arg>${QTDE_PRODUTO}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:31.990915" elapsed="0.039790"/>
+<status status="PASS" start="2024-03-15T18:46:51.039685" elapsed="0.013688"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>css=button[data-testid='cadastarProdutos']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.031034" elapsed="0.071485"/>
+<status status="PASS" start="2024-03-15T18:46:51.053682" elapsed="0.050262"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:31.847834" elapsed="0.254966"/>
+<status status="PASS" start="2024-03-15T18:46:50.948602" elapsed="0.155549"/>
 </kw>
 <kw name="Conferir que o produto aparece na listagem" owner="serve-rest-front">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:32.201766" level="INFO">Text: 'Lista dos Produtos'</msg>
+<msg time="2024-03-15T18:46:51.242396" level="INFO">Text: 'Lista dos Produtos'</msg>
 <arg>h1</arg>
 <arg>==</arg>
 <arg>Lista dos Produtos</arg>
@@ -671,12 +675,12 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.103956" elapsed="0.098039"/>
+<status status="PASS" start="2024-03-15T18:46:51.105021" elapsed="0.137537"/>
 </kw>
 <kw name="Get Table Cell Element" owner="Browser">
-<msg time="2024-03-15T18:38:32.213006" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-03-15T18:38:32.271126" level="INFO">Locator found successfully.</msg>
-<msg time="2024-03-15T18:38:32.271418" level="INFO">${elemento} = xpath=//table[@class="table table-striped"] &gt;&gt; tr &gt;&gt; nth=14 &gt;&gt; &gt; * &gt;&gt; nth=0</msg>
+<msg time="2024-03-15T18:46:51.251423" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:51.345675" level="INFO">Locator found successfully.</msg>
+<msg time="2024-03-15T18:46:51.345923" level="INFO">${elemento} = xpath=//table[@class="table table-striped"] &gt;&gt; tr &gt;&gt; nth=9 &gt;&gt; &gt; * &gt;&gt; nth=0</msg>
 <var>${elemento}</var>
 <arg>xpath=//table[@class="table table-striped"]</arg>
 <arg>"Nome"</arg>
@@ -684,12 +688,12 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the Web Element that has the same column index and same row index as the selected elements.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.202398" elapsed="0.069057"/>
+<status status="PASS" start="2024-03-15T18:46:51.242856" elapsed="0.103102"/>
 </kw>
 <kw name="Get Table Cell Element" owner="Browser">
-<msg time="2024-03-15T18:38:32.281208" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-03-15T18:38:32.314044" level="INFO">Locator found successfully.</msg>
-<msg time="2024-03-15T18:38:32.314336" level="INFO">${elementPreco} = xpath=//table[@class="table table-striped"] &gt;&gt; tr &gt;&gt; nth=14 &gt;&gt; &gt; * &gt;&gt; nth=1</msg>
+<msg time="2024-03-15T18:46:51.353284" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:51.369926" level="INFO">Locator found successfully.</msg>
+<msg time="2024-03-15T18:46:51.370153" level="INFO">${elementPreco} = xpath=//table[@class="table table-striped"] &gt;&gt; tr &gt;&gt; nth=9 &gt;&gt; &gt; * &gt;&gt; nth=1</msg>
 <var>${elementPreco}</var>
 <arg>xpath=//table[@class="table table-striped"]</arg>
 <arg>"Preço"</arg>
@@ -697,12 +701,12 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the Web Element that has the same column index and same row index as the selected elements.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.271787" elapsed="0.042589"/>
+<status status="PASS" start="2024-03-15T18:46:51.346238" elapsed="0.023949"/>
 </kw>
 <kw name="Get Table Cell Element" owner="Browser">
-<msg time="2024-03-15T18:38:32.325184" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-03-15T18:38:32.360381" level="INFO">Locator found successfully.</msg>
-<msg time="2024-03-15T18:38:32.360684" level="INFO">${elementQuantidade} = xpath=//table[@class="table table-striped"] &gt;&gt; tr &gt;&gt; nth=14 &gt;&gt; &gt; * &gt;&gt; nth=3</msg>
+<msg time="2024-03-15T18:46:51.377173" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:51.395410" level="INFO">Locator found successfully.</msg>
+<msg time="2024-03-15T18:46:51.395652" level="INFO">${elementQuantidade} = xpath=//table[@class="table table-striped"] &gt;&gt; tr &gt;&gt; nth=9 &gt;&gt; &gt; * &gt;&gt; nth=3</msg>
 <var>${elementQuantidade}</var>
 <arg>xpath=//table[@class="table table-striped"]</arg>
 <arg>"Quantidade"</arg>
@@ -710,10 +714,10 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the Web Element that has the same column index and same row index as the selected elements.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.314688" elapsed="0.046034"/>
+<status status="PASS" start="2024-03-15T18:46:51.370465" elapsed="0.025223"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:32.376951" level="INFO">Text: 'Product No_368'</msg>
+<msg time="2024-03-15T18:46:51.406336" level="INFO">Text: 'Product No_375'</msg>
 <arg>${elemento}</arg>
 <arg>==</arg>
 <arg>${NOME_PRODUTO}</arg>
@@ -721,10 +725,10 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.361014" elapsed="0.016097"/>
+<status status="PASS" start="2024-03-15T18:46:51.395957" elapsed="0.010501"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:32.393361" level="INFO">Text: '462'</msg>
+<msg time="2024-03-15T18:46:51.417824" level="INFO">Text: '44'</msg>
 <arg>${elementPreco}</arg>
 <arg>==</arg>
 <arg>${PRECO_PRODUTO}</arg>
@@ -732,10 +736,10 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.377398" elapsed="0.016123"/>
+<status status="PASS" start="2024-03-15T18:46:51.406699" elapsed="0.011262"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:32.408167" level="INFO">Text: '58'</msg>
+<msg time="2024-03-15T18:46:51.429137" level="INFO">Text: '77'</msg>
 <arg>${elementQuantidade}</arg>
 <arg>==</arg>
 <arg>${QTDE_PRODUTO}</arg>
@@ -743,7 +747,7 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.393812" elapsed="0.014514"/>
+<status status="PASS" start="2024-03-15T18:46:51.418219" elapsed="0.011042"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${elemento}</arg>
@@ -751,54 +755,55 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.408613" elapsed="0.031932"/>
+<status status="PASS" start="2024-03-15T18:46:51.429503" elapsed="0.014829"/>
 </kw>
 <kw name="Highlight Elements" owner="Browser">
-<msg time="2024-03-15T18:38:32.455682" level="INFO">Highlighted 1 elements for 5000.</msg>
+<msg time="2024-03-15T18:46:51.452239" level="INFO">Highlighted 1 elements for 5000.</msg>
 <arg>${elemento}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.440880" elapsed="0.015049"/>
+<status status="PASS" start="2024-03-15T18:46:51.444637" elapsed="0.007727"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:32.493002" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-7.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-7.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:51.539143" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-7.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-7.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.456245" elapsed="0.036958"/>
+<status status="PASS" start="2024-03-15T18:46:51.452604" elapsed="0.086726"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:32.103267" elapsed="0.390157"/>
+<status status="PASS" start="2024-03-15T18:46:51.104475" elapsed="0.435060"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:30.449262" elapsed="2.044341"/>
+<tag>cadastrar_novo_produto</tag>
+<status status="PASS" start="2024-03-15T18:46:49.824579" elapsed="1.715118"/>
 </test>
-<test id="s1-s1-t4" name="Exemplo utilizando requisições HTTP" line="23">
+<test id="s1-s1-t4" name="Exemplo utilizando requisições HTTP" line="26">
 <kw name="Abrir o Navegador" owner="serve-rest-front">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-03-15T18:38:32.543878" level="INFO">Switching browser to browser=769c59b8-c773-4126-ad5d-5822d74121a8</msg>
-<msg time="2024-03-15T18:38:32.545874" level="INFO">Successfully changed active browser: browser=769c59b8-c773-4126-ad5d-5822d74121a8</msg>
-<msg time="2024-03-15T18:38:32.545969" level="INFO">Reusing existing browser with id: browser=769c59b8-c773-4126-ad5d-5822d74121a8</msg>
+<msg time="2024-03-15T18:46:51.571391" level="INFO">Switching browser to browser=db32f996-9552-4d9f-a31d-c8f415521bf7</msg>
+<msg time="2024-03-15T18:46:51.573414" level="INFO">Successfully changed active browser: browser=db32f996-9552-4d9f-a31d-c8f415521bf7</msg>
+<msg time="2024-03-15T18:46:51.573500" level="INFO">Reusing existing browser with id: browser=db32f996-9552-4d9f-a31d-c8f415521bf7</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.543174" elapsed="0.002881"/>
+<status status="PASS" start="2024-03-15T18:46:51.570608" elapsed="0.002973"/>
 </kw>
 <kw name="Uuid 4" owner="FakerLibrary">
-<msg time="2024-03-15T18:38:32.546572" level="INFO">${TRACE_NAME} = 44bc678d-9625-4e51-a640-553ea0344869</msg>
+<msg time="2024-03-15T18:46:51.574056" level="INFO">${TRACE_NAME} = f14027fb-cc82-4d80-928b-feb3066c0cae</msg>
 <var>${TRACE_NAME}</var>
 <doc>Generate a random UUID4 object and cast it to another type if specified using a callable ``cast_to``.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.546299" elapsed="0.000314"/>
+<status status="PASS" start="2024-03-15T18:46:51.573802" elapsed="0.000292"/>
 </kw>
 <kw name="Get Current Date" owner="DateTime">
-<msg time="2024-03-15T18:38:32.547078" level="INFO">${NOW} = 15-03-2024_183832</msg>
+<msg time="2024-03-15T18:46:51.574540" level="INFO">${NOW} = 15-03-2024_184651</msg>
 <var>${NOW}</var>
 <arg>result_format=%d-%m-%Y_%H%M%S</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.546788" elapsed="0.000331"/>
+<status status="PASS" start="2024-03-15T18:46:51.574264" elapsed="0.000313"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2024-03-15T18:38:32.548049" level="INFO">{
+<msg time="2024-03-15T18:46:51.575445" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -808,32 +813,32 @@ unless it is completely visible.</doc>
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
   "viewport": {
-    "height": 800,
-    "width": 1200
+    "width": 1200,
+    "height": 800
   }
 }</msg>
-<msg time="2024-03-15T18:38:32.553021" level="INFO">Successfully created context. </msg>
-<msg time="2024-03-15T18:38:32.553097" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<msg time="2024-03-15T18:46:51.581116" level="INFO">Successfully created context. </msg>
+<msg time="2024-03-15T18:46:51.581181" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={'width': 1200, 'height': 800}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.547308" elapsed="0.005888"/>
+<status status="PASS" start="2024-03-15T18:46:51.574764" elapsed="0.006522"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:32.542741" elapsed="0.010607"/>
+<status status="PASS" start="2024-03-15T18:46:51.570152" elapsed="0.011277"/>
 </kw>
 <kw name="Ir para o site Serve Rest Front" owner="serve-rest-front">
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:33.309215" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/login</msg>
+<msg time="2024-03-15T18:46:52.348124" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/login</msg>
 <arg>url=${SITE_SERVE_REST}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:32.553940" elapsed="0.755628"/>
+<status status="PASS" start="2024-03-15T18:46:51.582074" elapsed="0.766369"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2024-03-15T18:38:33.317382" level="INFO">Title: 'Front - ServeRest'</msg>
-<msg time="2024-03-15T18:38:33.317592" level="INFO">${title} = Front - ServeRest</msg>
+<msg time="2024-03-15T18:46:52.411932" level="INFO">Title: 'Front - ServeRest'</msg>
+<msg time="2024-03-15T18:46:52.412162" level="INFO">${title} = Front - ServeRest</msg>
 <var>${title}</var>
 <arg>==</arg>
 <arg>Front - ServeRest</arg>
@@ -841,86 +846,87 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2024-03-15T18:38:33.310000" elapsed="0.007627"/>
+<status status="PASS" start="2024-03-15T18:46:52.348842" elapsed="0.063352"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-03-15T18:38:33.318120" level="INFO">Front - ServeRest</msg>
+<msg time="2024-03-15T18:46:52.412740" level="INFO">Front - ServeRest</msg>
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-03-15T18:38:33.317891" elapsed="0.000284"/>
+<status status="PASS" start="2024-03-15T18:46:52.412468" elapsed="0.000325"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:32.553595" elapsed="0.764676"/>
+<status status="PASS" start="2024-03-15T18:46:51.581693" elapsed="0.831190"/>
 </kw>
 <kw name="Logar com o usuário cadastrado via API" owner="serve-rest-front">
 <kw name="Http" owner="Browser">
-<msg time="2024-03-15T18:38:33.418458" level="INFO">{'status': 200, 'body': {'message': 'Login realizado com sucesso', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvZHltb29yZUBleGFtcGxlLm9yZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNzEwNTI3OTEzLCJleHAiOjE3MTA1Mjg1MTN9.wXyeJmfkeauysvMwbBUIbn_tKu65F8c6GOuljq9lnB8'}, 'headers': {'content-length': '277', 'content-type': 'application/json; charset=utf-8'}, 'type': 'cors', 'statusText': '', 'url': 'https://serverest.dev/login', 'ok': True, 'redirected': False}</msg>
-<msg time="2024-03-15T18:38:33.418913" level="INFO">${resposta} = {'status': 200, 'body': {'message': 'Login realizado com sucesso', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvZHltb29yZUBleGFtcGxlLm9yZyIsInBhc3N3b3JkIjoiMTIzNDU2Iiw...</msg>
+<msg time="2024-03-15T18:46:52.528740" level="INFO">{'status': 200, 'body': {'message': 'Login realizado com sucesso', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hdmFycm9hbm5hQGV4YW1wbGUubmV0IiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MTA1Mjg0MTIsImV4cCI6MTcxMDUyOTAxMn0.9ZeLClpcIePhFUufFPrMvY-9JhuIsIecKm1-nNFT3Yw'}, 'headers': {'content-length': '280', 'content-type': 'application/json; charset=utf-8'}, 'type': 'cors', 'statusText': '', 'url': 'https://serverest.dev/login', 'ok': True, 'redirected': False}</msg>
+<msg time="2024-03-15T18:46:52.529086" level="INFO">${resposta} = {'status': 200, 'body': {'message': 'Login realizado com sucesso', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hdmFycm9hbm5hQGV4YW1wbGUubmV0IiwicGFzc3dvcmQiOiIxMjM0NTY...</msg>
 <var>${resposta}</var>
 <arg>url=https://serverest.dev/login</arg>
 <arg>method=POST</arg>
 <arg>body={"email": "${EMAIL}", "password": "123456"}</arg>
 <tag>HTTP</tag>
 <doc>Performs an HTTP request in the current browser context</doc>
-<status status="PASS" start="2024-03-15T18:38:33.318799" elapsed="0.100174"/>
+<status status="PASS" start="2024-03-15T18:46:52.413399" elapsed="0.115723"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2024-03-15T18:38:33.420215" level="INFO">Argument types are:
+<msg time="2024-03-15T18:46:52.529975" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${resposta["status"]}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2024-03-15T18:38:33.419258" elapsed="0.001045"/>
+<status status="PASS" start="2024-03-15T18:46:52.529392" elapsed="0.000653"/>
 </kw>
 <kw name="LocalStorage Set Item" owner="Browser">
-<msg time="2024-03-15T18:38:33.425561" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:52.533806" level="INFO">JavaScript executed successfully.</msg>
 <arg>serverest/userNome</arg>
 <arg>${NOME}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Save data to the local storage.</doc>
-<status status="PASS" start="2024-03-15T18:38:33.420550" elapsed="0.005129"/>
+<status status="PASS" start="2024-03-15T18:46:52.530187" elapsed="0.003693"/>
 </kw>
 <kw name="LocalStorage Set Item" owner="Browser">
-<msg time="2024-03-15T18:38:33.430081" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:52.537041" level="INFO">JavaScript executed successfully.</msg>
 <arg>serverest/userEmail</arg>
 <arg>${EMAIL}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Save data to the local storage.</doc>
-<status status="PASS" start="2024-03-15T18:38:33.425936" elapsed="0.004244"/>
+<status status="PASS" start="2024-03-15T18:46:52.534040" elapsed="0.003071"/>
 </kw>
 <kw name="LocalStorage Set Item" owner="Browser">
-<msg time="2024-03-15T18:38:33.434786" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:52.540202" level="INFO">JavaScript executed successfully.</msg>
 <arg>serverest/userToken</arg>
 <arg>${resposta["body"]["authorization"]}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Save data to the local storage.</doc>
-<status status="PASS" start="2024-03-15T18:38:33.430402" elapsed="0.004489"/>
+<status status="PASS" start="2024-03-15T18:46:52.537266" elapsed="0.003007"/>
 </kw>
 <kw name="Go To" owner="Browser">
-<msg time="2024-03-15T18:38:33.674456" level="INFO">Successfully opened URL https://front.serverest.dev/admin/home</msg>
+<msg time="2024-03-15T18:46:52.919613" level="INFO">Successfully opened URL https://front.serverest.dev/admin/home</msg>
 <arg>https://front.serverest.dev/admin/home</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2024-03-15T18:38:33.435124" elapsed="0.239593"/>
+<status status="PASS" start="2024-03-15T18:46:52.540428" elapsed="0.379538"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:34.014635" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-8.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-8.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:53.132212" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-8.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-8.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:33.675090" elapsed="0.339796"/>
+<status status="PASS" start="2024-03-15T18:46:52.920380" elapsed="0.212014"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:33.318498" elapsed="0.696552"/>
+<status status="PASS" start="2024-03-15T18:46:52.413102" elapsed="0.719474"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:32.525987" elapsed="1.489245"/>
+<tag>logar_via_Api</tag>
+<status status="PASS" start="2024-03-15T18:46:51.566601" elapsed="1.566148"/>
 </test>
-<test id="s1-s1-t5" name="Exemplo utilizando o Storage Armazenado no Contexto" line="28">
+<test id="s1-s1-t5" name="Exemplo utilizando o Storage Armazenado no Contexto" line="32">
 <kw name="Abrir o site Serve Rest Front Logado" owner="serve-rest-front">
 <kw name="New Context" owner="Browser">
-<msg time="2024-03-15T18:38:34.073713" level="INFO">{
+<msg time="2024-03-15T18:46:53.165824" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -929,31 +935,31 @@ unless it is completely visible.</doc>
   "offline": false,
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
-  "storageState": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/71628ed2-dde3-422a-913b-57426bdd8f46.json",
+  "storageState": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/39a2bef7-c205-4244-a813-67a8c239c3dc.json",
   "viewport": {
-    "height": 800,
-    "width": 1200
+    "width": 1200,
+    "height": 800
   }
 }</msg>
-<msg time="2024-03-15T18:38:34.317303" level="INFO">Successfully created context. </msg>
-<msg time="2024-03-15T18:38:34.317428" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'storageState': '/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/71628ed2-dde3-422a-913b-57426bdd8f46.json', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<msg time="2024-03-15T18:46:53.248156" level="INFO">Successfully created context. </msg>
+<msg time="2024-03-15T18:46:53.248259" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'storageState': '/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/state/39a2bef7-c205-4244-a813-67a8c239c3dc.json', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={'width': 1200, 'height': 800}</arg>
 <arg>storageState=${STORAGE_FILE}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:34.072342" elapsed="0.245248"/>
+<status status="PASS" start="2024-03-15T18:46:53.164989" elapsed="0.083387"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:35.038917" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/admin/home</msg>
+<msg time="2024-03-15T18:46:53.920477" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/admin/home</msg>
 <arg>url=https://front.serverest.dev/admin/home</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:34.318002" elapsed="0.721282"/>
+<status status="PASS" start="2024-03-15T18:46:53.248721" elapsed="0.672045"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:35.106325" level="INFO">Text: 'Bem Vindo Lindsay Carey'</msg>
+<msg time="2024-03-15T18:46:54.333999" level="INFO">Text: 'Bem Vindo Stephen Kelley'</msg>
 <arg>h1</arg>
 <arg>==</arg>
 <arg>Bem Vindo ${NOME}</arg>
@@ -961,15 +967,15 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:35.039771" elapsed="0.066713"/>
+<status status="PASS" start="2024-03-15T18:46:53.921062" elapsed="0.413098"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:35.400263" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-9.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-9.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:54.465634" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-9.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-9.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:35.106782" elapsed="0.293661"/>
+<status status="PASS" start="2024-03-15T18:46:54.334454" elapsed="0.131359"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:34.071782" elapsed="1.328818"/>
+<status status="PASS" start="2024-03-15T18:46:53.164575" elapsed="1.301387"/>
 </kw>
 <kw name="Acessar a Lista de usuários" owner="serve-rest-front">
 <kw name="Click" owner="Browser">
@@ -977,10 +983,10 @@ unless it is completely visible.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:35.401239" elapsed="0.072509"/>
+<status status="PASS" start="2024-03-15T18:46:54.466607" elapsed="0.024784"/>
 </kw>
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-03-15T18:38:35.497765" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-03-15T18:46:54.510405" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>h1</arg>
 <arg>validate</arg>
 <arg>visible</arg>
@@ -988,10 +994,10 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:35.474197" elapsed="0.023724"/>
+<status status="PASS" start="2024-03-15T18:46:54.491735" elapsed="0.018824"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:35.512281" level="INFO">Text: 'Lista dos usuários'</msg>
+<msg time="2024-03-15T18:46:54.520349" level="INFO">Text: 'Lista dos usuários'</msg>
 <arg>h1</arg>
 <arg>==</arg>
 <arg>Lista dos usuários</arg>
@@ -999,51 +1005,52 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:35.498215" elapsed="0.014234"/>
+<status status="PASS" start="2024-03-15T18:46:54.510837" elapsed="0.009633"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:35.551559" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-10.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-10.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:54.730005" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-10.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-10.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:35.512751" elapsed="0.039027"/>
+<status status="PASS" start="2024-03-15T18:46:54.520770" elapsed="0.209424"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:35.400872" elapsed="0.151065"/>
+<status status="PASS" start="2024-03-15T18:46:54.466248" elapsed="0.264101"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:34.058543" elapsed="1.493630"/>
+<tag>logar_com_storage</tag>
+<status status="PASS" start="2024-03-15T18:46:53.160626" elapsed="1.569883"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2024-03-15T18:38:36.078948" level="INFO">Closed all browsers</msg>
+<msg time="2024-03-15T18:46:54.789138" level="INFO">Closed all browsers</msg>
 <arg>ALL</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-15T18:38:35.584637" elapsed="0.494518"/>
+<status status="PASS" start="2024-03-15T18:46:54.756189" elapsed="0.033229"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:19.662240" elapsed="16.417045"/>
+<status status="PASS" start="2024-03-15T18:46:36.155952" elapsed="18.633627"/>
 </suite>
 <suite id="s1-s2" name="The-Internet-Herokuapp" source="/home/runner/work/playwright-robotframework/playwright-robotframework/tests/the-internet-herokuapp.robot">
 <test id="s1-s2-t1" name="Interagindo com Dropdown" line="7">
 <kw name="Acessar &quot;https://the-internet.herokuapp.com/dropdown&quot;" owner="the-internet-herokuapp" source_name="Acessar &quot;${site}&quot;">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-03-15T18:38:36.094482" level="INFO">{"browser": "firefox", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/traces/39e1b3d0-92d2-4112-a7dc-7298729fa7df"}</msg>
-<msg time="2024-03-15T18:38:36.540755" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/traces/39e1b3d0-92d2-4112-a7dc-7298729fa7df"}</msg>
+<msg time="2024-03-15T18:46:54.808641" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/traces/857a3c3c-2adc-420c-86a2-e252c7de2a55"}</msg>
+<msg time="2024-03-15T18:46:55.281725" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/playwright-robotframework/playwright-robotframework/results/browser/traces/857a3c3c-2adc-420c-86a2-e252c7de2a55"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:36.093726" elapsed="0.447329"/>
+<status status="PASS" start="2024-03-15T18:46:54.807823" elapsed="0.474195"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:37.813725" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/dropdown</msg>
-<msg time="2024-03-15T18:38:37.813861" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-03-15T18:46:55.482134" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/dropdown</msg>
+<msg time="2024-03-15T18:46:55.482241" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>url=${site}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:36.541470" elapsed="1.272596"/>
+<status status="PASS" start="2024-03-15T18:46:55.282441" elapsed="0.199974"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:36.093370" elapsed="1.720866"/>
+<status status="PASS" start="2024-03-15T18:46:54.807458" elapsed="0.675138"/>
 </kw>
 <kw name="Selecionar opção &quot;Option 1&quot;" owner="the-internet-herokuapp" source_name="Selecionar opção &quot;${opcao}&quot;">
 <kw name="Select Options By" owner="Browser">
@@ -1053,99 +1060,101 @@ unless it is completely visible.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:37.814910" elapsed="0.068161"/>
+<status status="PASS" start="2024-03-15T18:46:55.483354" elapsed="0.039813"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:37.814509" elapsed="0.068770"/>
+<status status="PASS" start="2024-03-15T18:46:55.482942" elapsed="0.040422"/>
 </kw>
 <kw name="Tirar Print" owner="the-internet-herokuapp" type="TEARDOWN">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:37.906739" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-11.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-11.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:55.607870" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-11.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-11.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:37.884109" elapsed="0.022801"/>
+<status status="PASS" start="2024-03-15T18:46:55.524116" elapsed="0.083998"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:37.883701" elapsed="0.023416"/>
+<status status="PASS" start="2024-03-15T18:46:55.523730" elapsed="0.084528"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:36.091419" elapsed="1.815780"/>
+<tag>dropdown</tag>
+<status status="PASS" start="2024-03-15T18:46:54.805619" elapsed="0.802717"/>
 </test>
-<test id="s1-s2-t2" name="Interagindo com iFrames" line="11">
+<test id="s1-s2-t2" name="Interagindo com iFrames" line="12">
 <kw name="Acessar &quot;https://the-internet.herokuapp.com/iframe&quot;" owner="the-internet-herokuapp" source_name="Acessar &quot;${site}&quot;">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-03-15T18:38:37.942939" level="INFO">Switching browser to browser=6a42f88e-8b32-4544-a3d3-4b55d67edff3</msg>
-<msg time="2024-03-15T18:38:37.944798" level="INFO">Successfully changed active browser: browser=6a42f88e-8b32-4544-a3d3-4b55d67edff3</msg>
-<msg time="2024-03-15T18:38:37.944899" level="INFO">Reusing existing browser with id: browser=6a42f88e-8b32-4544-a3d3-4b55d67edff3</msg>
+<msg time="2024-03-15T18:46:55.636994" level="INFO">Switching browser to browser=c8559e96-6f79-47c4-808a-347c3a8c0c2c</msg>
+<msg time="2024-03-15T18:46:55.638375" level="INFO">Successfully changed active browser: browser=c8559e96-6f79-47c4-808a-347c3a8c0c2c</msg>
+<msg time="2024-03-15T18:46:55.638471" level="INFO">Reusing existing browser with id: browser=c8559e96-6f79-47c4-808a-347c3a8c0c2c</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:37.942044" elapsed="0.002954"/>
+<status status="PASS" start="2024-03-15T18:46:55.636301" elapsed="0.002275"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:38.874724" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/iframe</msg>
-<msg time="2024-03-15T18:38:38.874828" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-03-15T18:46:55.992230" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/iframe</msg>
+<msg time="2024-03-15T18:46:55.992334" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>url=${site}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:37.945293" elapsed="0.929725"/>
+<status status="PASS" start="2024-03-15T18:46:55.638770" elapsed="0.353758"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:37.941521" elapsed="0.933670"/>
+<status status="PASS" start="2024-03-15T18:46:55.635913" elapsed="0.356813"/>
 </kw>
 <kw name="Obter frase de dentro do iFrame" owner="the-internet-herokuapp">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:38.950082" level="INFO">Text: 'Your content goes here.'</msg>
-<msg time="2024-03-15T18:38:38.950299" level="INFO">${text} = Your content goes here.</msg>
+<msg time="2024-03-15T18:46:56.078320" level="INFO">Text: 'Your content goes here.'</msg>
+<msg time="2024-03-15T18:46:56.078532" level="INFO">${text} = Your content goes here.</msg>
 <var>${text}</var>
 <arg>id=mce_0_ifr &gt;&gt;&gt; id=tinymce</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:38.876072" elapsed="0.074263"/>
+<status status="PASS" start="2024-03-15T18:46:55.993619" elapsed="0.084946"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-03-15T18:38:38.950868" level="INFO">Your content goes here.</msg>
+<msg time="2024-03-15T18:46:56.079076" level="INFO">Your content goes here.</msg>
 <arg>${text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-03-15T18:38:38.950619" elapsed="0.000306"/>
+<status status="PASS" start="2024-03-15T18:46:56.078839" elapsed="0.000289"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:38.875501" elapsed="0.075520"/>
+<status status="PASS" start="2024-03-15T18:46:55.993047" elapsed="0.086173"/>
 </kw>
 <kw name="Tirar Print" owner="the-internet-herokuapp" type="TEARDOWN">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:38.980158" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-12.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-12.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:56.194019" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-12.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-12.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:38.951670" elapsed="0.028691"/>
+<status status="PASS" start="2024-03-15T18:46:56.079822" elapsed="0.114390"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:38.951309" elapsed="0.029211"/>
+<status status="PASS" start="2024-03-15T18:46:56.079503" elapsed="0.114868"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:37.938580" elapsed="1.042021"/>
+<tag>iframes</tag>
+<status status="PASS" start="2024-03-15T18:46:55.633793" elapsed="0.560655"/>
 </test>
-<test id="s1-s2-t3" name="Interagindo com Tabelas" line="15">
+<test id="s1-s2-t3" name="Interagindo com Tabelas" line="17">
 <kw name="Acessar &quot;https://the-internet.herokuapp.com/tables&quot;" owner="the-internet-herokuapp" source_name="Acessar &quot;${site}&quot;">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-03-15T18:38:39.014077" level="INFO">Switching browser to browser=6a42f88e-8b32-4544-a3d3-4b55d67edff3</msg>
-<msg time="2024-03-15T18:38:39.016224" level="INFO">Successfully changed active browser: browser=6a42f88e-8b32-4544-a3d3-4b55d67edff3</msg>
-<msg time="2024-03-15T18:38:39.016319" level="INFO">Reusing existing browser with id: browser=6a42f88e-8b32-4544-a3d3-4b55d67edff3</msg>
+<msg time="2024-03-15T18:46:56.221561" level="INFO">Switching browser to browser=c8559e96-6f79-47c4-808a-347c3a8c0c2c</msg>
+<msg time="2024-03-15T18:46:56.222683" level="INFO">Successfully changed active browser: browser=c8559e96-6f79-47c4-808a-347c3a8c0c2c</msg>
+<msg time="2024-03-15T18:46:56.222744" level="INFO">Reusing existing browser with id: browser=c8559e96-6f79-47c4-808a-347c3a8c0c2c</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.013181" elapsed="0.003235"/>
+<status status="PASS" start="2024-03-15T18:46:56.220934" elapsed="0.001874"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:39.621792" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/tables</msg>
-<msg time="2024-03-15T18:38:39.621894" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-03-15T18:46:56.379051" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/tables</msg>
+<msg time="2024-03-15T18:46:56.379154" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>url=${site}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.016701" elapsed="0.605382"/>
+<status status="PASS" start="2024-03-15T18:46:56.222966" elapsed="0.156372"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:39.012631" elapsed="0.609651"/>
+<status status="PASS" start="2024-03-15T18:46:56.220480" elapsed="0.159019"/>
 </kw>
 <kw name="Conferindo valores em tabelas" owner="the-internet-herokuapp">
 <kw name="Click" owner="Browser">
@@ -1153,12 +1162,12 @@ unless it is completely visible.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.622985" elapsed="0.079562"/>
+<status status="PASS" start="2024-03-15T18:46:56.380150" elapsed="0.070447"/>
 </kw>
 <kw name="Get Table Cell Element" owner="Browser">
-<msg time="2024-03-15T18:38:39.744162" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-03-15T18:38:39.752202" level="INFO">Locator found successfully.</msg>
-<msg time="2024-03-15T18:38:39.752476" level="INFO">${elemento} = id=table1 &gt;&gt; tr &gt;&gt; nth=1 &gt;&gt; &gt; * &gt;&gt; nth=1</msg>
+<msg time="2024-03-15T18:46:56.466315" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:56.470670" level="INFO">Locator found successfully.</msg>
+<msg time="2024-03-15T18:46:56.470874" level="INFO">${elemento} = id=table1 &gt;&gt; tr &gt;&gt; nth=1 &gt;&gt; &gt; * &gt;&gt; nth=1</msg>
 <var>${elemento}</var>
 <arg>id=table1</arg>
 <arg>1</arg>
@@ -1166,11 +1175,11 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the Web Element that has the same column index and same row index as the selected elements.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.703018" elapsed="0.049497"/>
+<status status="PASS" start="2024-03-15T18:46:56.450916" elapsed="0.019993"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:39.768367" level="INFO">Text: 'Frank'</msg>
-<msg time="2024-03-15T18:38:39.768597" level="INFO">${nome} = Frank</msg>
+<msg time="2024-03-15T18:46:56.481399" level="INFO">Text: 'Frank'</msg>
+<msg time="2024-03-15T18:46:56.481547" level="INFO">${nome} = Frank</msg>
 <var>${nome}</var>
 <arg>${elemento}</arg>
 <arg>==</arg>
@@ -1179,18 +1188,18 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.752811" elapsed="0.015822"/>
+<status status="PASS" start="2024-03-15T18:46:56.471175" elapsed="0.010402"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-03-15T18:38:39.769163" level="INFO">Frank</msg>
+<msg time="2024-03-15T18:46:56.481997" level="INFO">Frank</msg>
 <arg>${nome}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.768920" elapsed="0.000296"/>
+<status status="PASS" start="2024-03-15T18:46:56.481790" elapsed="0.000258"/>
 </kw>
 <kw name="Get Table Cell Element" owner="Browser">
-<msg time="2024-03-15T18:38:39.779210" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-03-15T18:38:39.804880" level="INFO">Locator found successfully.</msg>
-<msg time="2024-03-15T18:38:39.805152" level="INFO">${elemento} = id=table1 &gt;&gt; tr &gt;&gt; nth=1 &gt;&gt; &gt; * &gt;&gt; nth=1</msg>
+<msg time="2024-03-15T18:46:56.488613" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-03-15T18:46:56.503328" level="INFO">Locator found successfully.</msg>
+<msg time="2024-03-15T18:46:56.503516" level="INFO">${elemento} = id=table1 &gt;&gt; tr &gt;&gt; nth=1 &gt;&gt; &gt; * &gt;&gt; nth=1</msg>
 <var>${elemento}</var>
 <arg>id=table1</arg>
 <arg>"First Name"</arg>
@@ -1198,11 +1207,11 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the Web Element that has the same column index and same row index as the selected elements.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.769367" elapsed="0.035824"/>
+<status status="PASS" start="2024-03-15T18:46:56.482189" elapsed="0.021361"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:39.820163" level="INFO">Text: 'Frank'</msg>
-<msg time="2024-03-15T18:38:39.820399" level="INFO">${nome} = Frank</msg>
+<msg time="2024-03-15T18:46:56.513261" level="INFO">Text: 'Frank'</msg>
+<msg time="2024-03-15T18:46:56.513404" level="INFO">${nome} = Frank</msg>
 <var>${nome}</var>
 <arg>${elemento}</arg>
 <arg>==</arg>
@@ -1211,60 +1220,61 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.805477" elapsed="0.014958"/>
+<status status="PASS" start="2024-03-15T18:46:56.503792" elapsed="0.009642"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-03-15T18:38:39.820963" level="INFO">Frank</msg>
+<msg time="2024-03-15T18:46:56.513889" level="INFO">Frank</msg>
 <arg>${nome}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.820721" elapsed="0.000296"/>
+<status status="PASS" start="2024-03-15T18:46:56.513692" elapsed="0.000248"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:39.622599" elapsed="0.198570"/>
+<status status="PASS" start="2024-03-15T18:46:56.379783" elapsed="0.134244"/>
 </kw>
 <kw name="Tirar Print" owner="the-internet-herokuapp" type="TEARDOWN">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:39.851419" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-13.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-13.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:56.590758" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-13.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-13.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.821807" elapsed="0.029807"/>
+<status status="PASS" start="2024-03-15T18:46:56.514606" elapsed="0.076350"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:39.821474" elapsed="0.030344"/>
+<status status="PASS" start="2024-03-15T18:46:56.514292" elapsed="0.076824"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:39.009598" elapsed="0.842301"/>
+<tag>tabelas</tag>
+<status status="PASS" start="2024-03-15T18:46:56.218494" elapsed="0.372704"/>
 </test>
-<test id="s1-s2-t4" name="Interagindo com novas abas (pages)" line="19">
+<test id="s1-s2-t4" name="Interagindo com novas abas (pages)" line="22">
 <kw name="Acessar &quot;https://the-internet.herokuapp.com/windows&quot;" owner="the-internet-herokuapp" source_name="Acessar &quot;${site}&quot;">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-03-15T18:38:39.884357" level="INFO">Switching browser to browser=6a42f88e-8b32-4544-a3d3-4b55d67edff3</msg>
-<msg time="2024-03-15T18:38:39.885982" level="INFO">Successfully changed active browser: browser=6a42f88e-8b32-4544-a3d3-4b55d67edff3</msg>
-<msg time="2024-03-15T18:38:39.886106" level="INFO">Reusing existing browser with id: browser=6a42f88e-8b32-4544-a3d3-4b55d67edff3</msg>
+<msg time="2024-03-15T18:46:56.617365" level="INFO">Switching browser to browser=c8559e96-6f79-47c4-808a-347c3a8c0c2c</msg>
+<msg time="2024-03-15T18:46:56.618525" level="INFO">Successfully changed active browser: browser=c8559e96-6f79-47c4-808a-347c3a8c0c2c</msg>
+<msg time="2024-03-15T18:46:56.618612" level="INFO">Reusing existing browser with id: browser=c8559e96-6f79-47c4-808a-347c3a8c0c2c</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.883676" elapsed="0.002585"/>
+<status status="PASS" start="2024-03-15T18:46:56.616725" elapsed="0.001974"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-03-15T18:38:40.462478" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/windows</msg>
-<msg time="2024-03-15T18:38:40.462616" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-03-15T18:46:56.768568" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/windows</msg>
+<msg time="2024-03-15T18:46:56.768700" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>url=${site}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-03-15T18:38:39.886578" elapsed="0.576306"/>
+<status status="PASS" start="2024-03-15T18:46:56.618921" elapsed="0.150046"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:39.883236" elapsed="0.579901"/>
+<status status="PASS" start="2024-03-15T18:46:56.616322" elapsed="0.152873"/>
 </kw>
 <kw name="Get Page Ids" owner="Browser">
-<msg time="2024-03-15T18:38:40.470631" level="INFO">${pagina_id} = ['page=6d56d2ce-4ea9-4d50-8006-b83e13b8fed1']</msg>
+<msg time="2024-03-15T18:46:56.774628" level="INFO">${pagina_id} = ['page=7eb51e9c-98ac-435e-98af-bec4ba9a9b6c']</msg>
 <var>${pagina_id}</var>
 <arg>CURRENT</arg>
 <tag>BrowserControl</tag>
 <tag>Getter</tag>
 <doc>Returns a list of page ids based on the context and browser selection.
 See `Browser, Context and Page` for more information about Page and related concepts.</doc>
-<status status="PASS" start="2024-03-15T18:38:40.463480" elapsed="0.007211"/>
+<status status="PASS" start="2024-03-15T18:46:56.769489" elapsed="0.005198"/>
 </kw>
 <kw name="Clicar e ir para a nova página aberta" owner="the-internet-herokuapp">
 <kw name="Click" owner="Browser">
@@ -1272,19 +1282,19 @@ See `Browser, Context and Page` for more information about Page and related conc
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:40.471369" elapsed="0.115734"/>
+<status status="PASS" start="2024-03-15T18:46:56.775327" elapsed="0.067500"/>
 </kw>
 <kw name="Switch Page" owner="Browser">
-<msg time="2024-03-15T18:38:40.588364" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
-<msg time="2024-03-15T18:38:40.638407" level="INFO">Activated new page page=9ef24433-be27-451e-9a15-ebadf6d83772</msg>
+<msg time="2024-03-15T18:46:56.843901" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
+<msg time="2024-03-15T18:46:56.877749" level="INFO">Activated new page page=c3a83960-df60-460f-9135-69c540e1bcc7</msg>
 <arg>NEW</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2024-03-15T18:38:40.587519" elapsed="0.051173"/>
+<status status="PASS" start="2024-03-15T18:46:56.843146" elapsed="0.034823"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-03-15T18:38:40.696190" level="INFO">Text: 'New Window'</msg>
+<msg time="2024-03-15T18:46:56.912509" level="INFO">Text: 'New Window'</msg>
 <arg>h3</arg>
 <arg>==</arg>
 <arg>New Window</arg>
@@ -1292,69 +1302,79 @@ See `Browser, Context and Page` for more information about Page and related conc
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-03-15T18:38:40.639011" elapsed="0.057342"/>
+<status status="PASS" start="2024-03-15T18:46:56.878251" elapsed="0.034450"/>
 </kw>
 <kw name="Tirar Print" owner="the-internet-herokuapp">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:40.718236" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-14.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-14.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:56.987685" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-14.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-14.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:40.697091" elapsed="0.021338"/>
+<status status="PASS" start="2024-03-15T18:46:56.913409" elapsed="0.074450"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:40.696702" elapsed="0.021886"/>
+<status status="PASS" start="2024-03-15T18:46:56.913028" elapsed="0.074979"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:40.471010" elapsed="0.247652"/>
+<status status="PASS" start="2024-03-15T18:46:56.775006" elapsed="0.213075"/>
 </kw>
 <kw name="Voltar para a página inicial" owner="the-internet-herokuapp">
 <kw name="Switch Page" owner="Browser">
-<msg time="2024-03-15T18:38:40.719999" level="INFO">Switching to page page=6d56d2ce-4ea9-4d50-8006-b83e13b8fed1,context CURRENT, browser CURRENT</msg>
-<msg time="2024-03-15T18:38:41.028494" level="INFO">Successfully changed active page: page=6d56d2ce-4ea9-4d50-8006-b83e13b8fed1</msg>
+<msg time="2024-03-15T18:46:56.989335" level="INFO">Switching to page page=7eb51e9c-98ac-435e-98af-bec4ba9a9b6c,context CURRENT, browser CURRENT</msg>
+<msg time="2024-03-15T18:46:56.994087" level="INFO">Successfully changed active page: page=7eb51e9c-98ac-435e-98af-bec4ba9a9b6c</msg>
 <arg>${pagina_id}[0]</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2024-03-15T18:38:40.719336" elapsed="0.309389"/>
+<status status="PASS" start="2024-03-15T18:46:56.988774" elapsed="0.005400"/>
 </kw>
 <kw name="Tirar Print" owner="the-internet-herokuapp">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:41.052065" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-15.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-15.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:57.057167" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-15.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-15.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:41.029479" elapsed="0.022779"/>
+<status status="PASS" start="2024-03-15T18:46:56.994624" elapsed="0.062719"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:41.029079" elapsed="0.023345"/>
+<status status="PASS" start="2024-03-15T18:46:56.994355" elapsed="0.063134"/>
 </kw>
 <arg>${pagina_id}</arg>
-<status status="PASS" start="2024-03-15T18:38:40.718907" elapsed="0.333594"/>
+<status status="PASS" start="2024-03-15T18:46:56.988321" elapsed="0.069256"/>
 </kw>
 <kw name="Tirar Print" owner="the-internet-herokuapp" type="TEARDOWN">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2024-03-15T18:38:41.074882" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-16.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-16.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-15T18:46:57.123942" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-16.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-16.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-03-15T18:38:41.053244" elapsed="0.021825"/>
+<status status="PASS" start="2024-03-15T18:46:57.058281" elapsed="0.065834"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:41.052851" elapsed="0.022395"/>
+<status status="PASS" start="2024-03-15T18:46:57.057912" elapsed="0.066349"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:39.880749" elapsed="1.194580"/>
+<tag>nova_aba</tag>
+<status status="PASS" start="2024-03-15T18:46:56.614188" elapsed="0.510152"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2024-03-15T18:38:42.297980" level="INFO">Closed all browsers</msg>
+<msg time="2024-03-15T18:46:57.189207" level="INFO">Closed all browsers</msg>
 <arg>ALL</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-15T18:38:41.122210" elapsed="1.176038"/>
+<status status="PASS" start="2024-03-15T18:46:57.153081" elapsed="0.036355"/>
 </kw>
-<status status="PASS" start="2024-03-15T18:38:36.084615" elapsed="6.213792"/>
+<status status="PASS" start="2024-03-15T18:46:54.796566" elapsed="2.392993"/>
 </suite>
-<status status="PASS" start="2024-03-15T18:38:19.641952" elapsed="22.661441"/>
+<status status="PASS" start="2024-03-15T18:46:36.136817" elapsed="21.056697"/>
 </suite>
 <statistics>
 <total>
 <stat pass="9" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">cadastrar_novo_produto</stat>
+<stat pass="1" fail="0" skip="0">dropdown</stat>
+<stat pass="1" fail="0" skip="0">iframes</stat>
+<stat pass="1" fail="0" skip="0">lista_usuario</stat>
+<stat pass="1" fail="0" skip="0">logar_com_storage</stat>
+<stat pass="1" fail="0" skip="0">logar_via_Api</stat>
+<stat pass="1" fail="0" skip="0">login_sucesso</stat>
+<stat pass="1" fail="0" skip="0">nova_aba</stat>
+<stat pass="1" fail="0" skip="0">tabelas</stat>
 </tag>
 <suite>
 <stat pass="9" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
