@@ -10,6 +10,12 @@ jobs:
   web-tests:
     runs-on: ubuntu-latest
     permissions: write-all
+    
+    strategy:
+      matrix: 
+        browser: [chromiun, firefox, webkit]
+      fail-fast: false
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,13 +39,13 @@ jobs:
 
       - name: Run Web Tests
         run: |
-          robot -d ./results -v HEADLESS:true -v BROWSER:chromium tests
+          robot -d ./results -v HEADLESS:true -v BROWSER:${{ matrix.browser }} tests
 
       - name: upload test Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: resultsChromium
+          name: results${{ matrix.browser }}
           path: ./results
           # if-no-files-found: ignore
           retention-days: 2
@@ -48,7 +54,7 @@ jobs:
         if: always()
         uses: actions/download-artifact@v4
         with:
-          name: resultsChromium
+          name: results${{ matrix.browser }}
 
       - name: Send Report
         if: always()
