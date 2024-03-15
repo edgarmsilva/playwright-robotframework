@@ -13,7 +13,7 @@ jobs:
     
     strategy:
       matrix: 
-        browser: [chromiun, firefox, webkit]
+        browser: [chromium, firefox, webkit]
       fail-fast: false
 
     steps:
