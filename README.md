@@ -1,3 +1,16 @@
+## Execution instructions:
+
+To install the dependencies:
+```
+pip install -r requirements.txt 
+rfbrowser init
+```
+
+to execute the tests run this command on terminal
+```
+robot -d ./results tests
+
+```
 
 ## sites
 
@@ -22,7 +35,6 @@ https://robotframework-browser.org/#installation
 
 ## Playwright trace viewer:
 https://trace.playwright.dev
-
 
 
 ## Report Page:
