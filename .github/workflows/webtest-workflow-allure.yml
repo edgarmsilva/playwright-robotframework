@@ -27,10 +27,7 @@ jobs:
         run: rm -rf output/
 
       - name: Run Test
-        run: robot --listener allure_robotframework -v HEADLESS:true tests
-
-      # - name: Generate report
-      #   run: allure generate output/allure-results -o allure-report --clean
+        run: python -m robot --listener allure_robotframework -v HEADLESS:true ./tests
 
       - name: Load test report history
         uses: actions/checkout@v3
