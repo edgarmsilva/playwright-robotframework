@@ -35,7 +35,7 @@ jobs:
 
       - name: Run Web Tests
         run: |
-          robot -d ./results -v HEADLESS:true --listener allure_robotframework tests
+          robot --listener allure_robotframework -v HEADLESS:true  tests
 
       - name: Get Allure history
         uses: actions/checkout@v4
