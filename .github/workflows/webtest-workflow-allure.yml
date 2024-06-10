@@ -33,9 +33,14 @@ jobs:
           sudo npx playwright install-deps
           rfbrowser init
 
+      - name: Prepare Allure history # Step to prepare Allure history directory
+        run: |
+          cd ..
+          mkdir -p allure_results
+
       - name: Run Web Tests
         run: |
-          robot --listener allure_robotframework -v HEADLESS:true tests
+          robot --listener allure_robotframework -v HEADLESS:true tests --alluredir=../allure_results
 
       - name: Load test report history
         uses: actions/checkout@v3
@@ -52,7 +57,7 @@ jobs:
         with:
             gh_pages: gh-pages
             allure_history: allure-history
-            allure_results: allure-results
+            allure_results: allure_results
             allure_report: allure-report
   
       - name: Publish test report
