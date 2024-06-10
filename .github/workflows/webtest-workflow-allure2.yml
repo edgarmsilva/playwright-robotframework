@@ -36,6 +36,8 @@ jobs:
       - name: Run Web Tests
         run: |
           robot --listener allure_robotframework -v HEADLESS:true  tests
+          allure generate build/allure-results
+
 
       - name: Get Allure history
         uses: actions/checkout@v4
