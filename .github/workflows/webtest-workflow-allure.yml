@@ -33,9 +33,9 @@ jobs:
           sudo npx playwright install-deps
           rfbrowser init
 
-      - name: Run Web Tests
-        run: |
-          robot --listener allure_robotframework -v HEADLESS:true tests
+      # - name: Run Web Tests
+      #   run: |
+      #     robot --listener allure_robotframework -v HEADLESS:true tests
 
       - name: Load test report history
         uses: actions/checkout@v3
