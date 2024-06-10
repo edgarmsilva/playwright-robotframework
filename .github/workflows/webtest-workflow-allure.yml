@@ -1,6 +1,6 @@
 name: Run Web with Allure Report
 
-on:  
+on:
   push:
     branches: [ "main" ]
   pull_request:
@@ -22,12 +22,19 @@ jobs:
           sudo npm install @playwright/test
           sudo npx playwright install-deps
           rfbrowser init
+          npm install -g allure-commandline
+          allure --version
+          npx allure --version
+
   
       - name: Clean output allure
         run: rm -rf output/
 
       - name: Run Test
-        run: python -m robot --listener allure_robotframework -v HEADLESS:true ./tests
+        run: |
+          python -m robot --listener allure_robotframework -v HEADLESS:true ./tests
+          allure generate output/allure-results -o allure-report --clean
+
 
       - name: Load test report history
         uses: actions/checkout@v3
@@ -43,7 +50,7 @@ jobs:
         with:
           gh_pages: gh-pages
           allure_history: allure-history
-          allure_results: build/allure-results
+          allure_results: allure-results
 
       - name: Publish test report
         uses: peaceiris/actions-gh-pages@v3
