@@ -61,8 +61,8 @@ jobs:
         id: allure-report
         with:
             gh_pages: gh-pages
-            allure_history: allure-history
-            allure_results: allure-results
+            allure_history: history
+            allure_results: results
             allure_report: allure-report
   
       - name: Publish test report

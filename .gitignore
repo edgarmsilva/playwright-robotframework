@@ -4,4 +4,6 @@ output.xml
 log.html
 playwright-log.txt
 report.html
-./allure-report
+allure-report
+output
+report.html
