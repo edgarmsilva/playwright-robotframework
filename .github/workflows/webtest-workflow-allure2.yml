@@ -32,7 +32,8 @@ jobs:
           sudo npm install @playwright/test
           sudo npx playwright install-deps
           rfbrowser init
-          sudo dpkg -i allure_2.29.0-1_all.deb
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew install allure
           allure --version
 
 
