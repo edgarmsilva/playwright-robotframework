@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  web-tests:
+  web-tests ALLURE:
     runs-on: ubuntu-latest
     permissions: write-all
 
@@ -23,13 +23,6 @@ jobs:
           sudo npm install @playwright/test
           sudo npx playwright install-deps
           rfbrowser init
-
-      - name: Install Allure CLI
-        run: |
-          wget https://github.com/allure-framework/allure2/releases/download/2.13.8/allure-2.13.8.tgz
-          tar -zxvf allure-2.13.8.tgz
-          sudo mv allure-2.13.8 /opt/allure
-          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
   
       - name: Clean output allure
         run: rm -rf output/
@@ -40,13 +33,6 @@ jobs:
       - name: Generate report
         run: allure generate output/allure-results -o allure-report --clean
 
-      - name: Upload Test Report
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: allure-report
-          path: allure-report/
-
       - name: Load test report history
         uses: actions/checkout@v3
         if: always()
@@ -54,21 +40,19 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
-  
+
       - name: Build test report
         uses: simple-elf/allure-report-action@v1.7
         if: always()
-        id: allure-report
         with:
-            gh_pages: gh-pages
-            allure_history: history
-            allure_results: results
-            allure_report: allure-report
-  
+          gh_pages: gh-pages
+          allure_history: allure-history
+          allure_results: build/allure-results
+
       - name: Publish test report
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_branch: gh-pages
-            publish_dir: allure-history
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history

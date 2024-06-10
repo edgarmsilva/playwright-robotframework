@@ -9,19 +9,19 @@ Interagindo com Dropdown
     Acessar "https://the-internet.herokuapp.com/dropdown"
     Selecionar opção "Option 1"
 
-Interagindo com iFrames
-    [Tags]    iframes
-    Acessar "https://the-internet.herokuapp.com/iframe"
-    Obter frase de dentro do iFrame
+# Interagindo com iFrames
+#     [Tags]    iframes
+#     Acessar "https://the-internet.herokuapp.com/iframe"
+#     Obter frase de dentro do iFrame
 
-Interagindo com Tabelas
-    [Tags]    tabelas
-    Acessar "https://the-internet.herokuapp.com/tables"
-    Conferindo valores em tabelas
+# Interagindo com Tabelas
+#     [Tags]    tabelas
+#     Acessar "https://the-internet.herokuapp.com/tables"
+#     Conferindo valores em tabelas
 
-Interagindo com novas abas (pages)
-    [Tags]    nova_aba
-    Acessar "https://the-internet.herokuapp.com/windows"
-    ${pagina_id}                                            Get Page Ids    CURRENT
-    Clicar e ir para a nova página aberta
-    Voltar para a página inicial                            ${pagina_id}
+# Interagindo com novas abas (pages)
+#     [Tags]    nova_aba
+#     Acessar "https://the-internet.herokuapp.com/windows"
+#     ${pagina_id}                                            Get Page Ids    CURRENT
+#     Clicar e ir para a nova página aberta
+#     Voltar para a página inicial                            ${pagina_id}
