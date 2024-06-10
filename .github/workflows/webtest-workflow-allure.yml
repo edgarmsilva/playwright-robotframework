@@ -10,7 +10,7 @@ jobs:
   web-tests-ALLURE:
     runs-on: ubuntu-latest
     permissions: write-all
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,10 +27,10 @@ jobs:
         run: rm -rf output/
 
       - name: Run Test
-        run: robot -d logs --listener "allure_robotframework;output/allure-results" -v HEADLESS:true tests/ || true
+        run: robot --listener allure_robotframework -v HEADLESS:true tests
 
-      - name: Generate report
-        run: allure generate output/allure-results -o allure-report --clean
+      # - name: Generate report
+      #   run: allure generate output/allure-results -o allure-report --clean
 
       - name: Load test report history
         uses: actions/checkout@v3
