@@ -32,10 +32,16 @@ jobs:
           sudo npm install @playwright/test
           sudo npx playwright install-deps
           rfbrowser init
+          sudo dpkg -i allure_2.29.0-1_all.deb
+          allure --version
+
 
       - name: Run Web Tests
         run: |
           robot --listener allure_robotframework -v HEADLESS:true  tests
+
+      - name: generate report
+        run: |
           allure generate build/allure-results
 
 
