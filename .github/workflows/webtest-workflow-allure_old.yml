@@ -33,12 +33,12 @@
 #           sudo npx playwright install-deps
 #           rfbrowser init
 
-#       - name: Install Allure CLI
-#         run: |
-#           wget https://github.com/allure-framework/allure2/releases/download/2.13.8/allure-2.13.8.tgz
-#           tar -zxvf allure-2.13.8.tgz
-#           sudo mv allure-2.13.8 /opt/allure
-#           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+    #   - name: Install Allure CLI
+    #     run: |
+    #       wget https://github.com/allure-framework/allure2/releases/download/2.13.8/allure-2.13.8.tgz
+    #       tar -zxvf allure-2.13.8.tgz
+    #       sudo mv allure-2.13.8 /opt/allure
+    #       sudo ln -s /opt/allure/bin/allure /usr/bin/allure
   
 #       - name: Clean output allure
 #         run: rm -rf output/
