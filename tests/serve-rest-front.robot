@@ -23,6 +23,7 @@ Desafio 2: cadastrar novo produto e validar que ele aparece na listagem
     Cadastrar um novo produto
     Conferir que o produto aparece na listagem
 
+
 Exemplo utilizando requisições HTTP
     [Tags]    logar_via_Api
     Abrir o Navegador
